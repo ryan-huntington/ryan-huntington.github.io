@@ -2,6 +2,7 @@ import React from 'react';
 import self from '../assets/IMG_8543.jpg'
 import './styles.css'
 import ResumePDF from '../assets/Resume_Huntington2024.pdf'
+import { IoIosCall, IoIosMail } from "react-icons/io"
 
 function AboutMe() {
   return (
@@ -35,11 +36,27 @@ function AboutMe() {
         <div className='portrait'>
           <img src={self} alt="Self portrait of Ryan Huntington" />
         </div>
+      </div>
 
-      </div>
+
+
       <div className='contact-container'>
-        <p>this section will be about contacting me, email and phone</p>
+        <div className='contact-info'>
+          <span className='contact-icon'>
+            <IoIosMail />
+          </span>
+          <a href='mailto:ryanhuntington12@gmail.com' className='info-text'>ryanhuntington12@gmail.com</a>
+        </div>
+        <div className='contact-info'>
+          <span className='contact-icon'>
+            <IoIosCall />
+          </span>
+          <a href='tel:+7605329830' className='info-text'>+1 (760) 532-9830</a>
+        </div>
       </div>
+
+
+
       <div className='work-experience'>
         <h2>Work Experience</h2>
         <div className='experience-item'>

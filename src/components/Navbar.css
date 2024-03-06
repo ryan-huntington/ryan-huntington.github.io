@@ -84,6 +84,8 @@ body {
   z-index: 2;
 }
 
+.navbar .icon {}
+
 .navbar .nav-item .fas,
 .navbar .nav-item .icon {
   transform: translateX(15px);
@@ -125,6 +127,7 @@ a.social {
   display: inline-block;
   text-decoration: none;
   font-size: 1.5rem;
+
 }
 
 a.social:hover {
