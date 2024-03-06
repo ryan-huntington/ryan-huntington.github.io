@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  /* border-color: RED;
+    border-style: solid ;
+    border-width: 1px; */
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  background-color: #432fbf;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 2rem;
+  height: 2.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.navbar a.active {
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: #fff;
+}
+
+.pages {
+  flex: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.pages .nav-item-highlighter {
+  width: 17%;
+  height: 75%;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  visibility: hidden;
+  transition: left .5s;
+}
+
+.pages .nav-item.active {
+  color: #fff;
+}
+
+.pages .nav-item.active~.nav-item-highlighter {
+  visibility: visible;
+}
+
+.pages .nav-item.active.item-0~.nav-item-highlighter {
+  left: 16.5%
+}
+
+.pages .nav-item.active.item-1~.nav-item-highlighter {
+  left: 49%
+}
+
+.pages .nav-item.active.item-2~.nav-item-highlighter {
+  left: 83%
+}
+
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+
+  color: #999;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.navbar .icon {}
+
+.navbar .nav-item .fas,
+.navbar .nav-item .icon {
+  transform: translateX(15px);
+  margin-right: 10px;
+  transition: transform 0.25s;
+}
+
+.navbar .nav-item.active .fas,
+.navbar .nav-item.active .icon {
+  margin-right: 10px;
+  transform: translateX(0px);
+}
+
+.navbar .nav-item .nav-item-text {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s;
+}
+
+.navbar .nav-item.active .nav-item-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.social-container {
+  width: 25%;
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  align-items: center;
+  transform: translateY(50%);
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
