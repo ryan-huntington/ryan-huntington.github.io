@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import AboutMe from './pages/AboutMe';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import React, { useState } from "react";
 import { FaHome, FaInbox, FaUser } from "react-icons/fa"
 
@@ -39,6 +40,7 @@ function App() {
         <Route path="/about" element={<AboutMe />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <Footer />
     </>
 
   );

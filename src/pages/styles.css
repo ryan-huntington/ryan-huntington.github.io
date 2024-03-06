@@ -4,20 +4,17 @@
 
 body {
     margin: 0;
+
 }
 
 .page {
     max-width: 75%;
     margin: 0 auto;
     padding: 20px;
-
+    position: relative;
+    min-height: 87.95vh;
 }
 
-@media screen and (min-width: 700px) {
-    .page {
-        padding: 40px;
-    }
-}
 
 /* <!-- About me section > */
 .bio-container {
@@ -26,7 +23,6 @@ body {
     align-items: center;
     flex-wrap: wrap-reverse;
     position: realtive;
-
 }
 
 .bio-text {
@@ -46,10 +42,14 @@ body {
     max-width: 100%;
     height: auto;
     display: block;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 850px) {
+    .page {
+        padding: 0px;
+    }
+
     .bio-text {
         width: 100%;
         /* Set width to full on smaller screens */
@@ -67,9 +67,10 @@ body {
 
 /* <!-- Work Experience > */
 .work-experience {
-    margin-top: 2s0px;
+    margin-top: 20px;
     padding: 20px;
     background-color: #f9f9f9;
+    /* background-color: #e6d4ff; */
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -83,6 +84,7 @@ body {
 
 .experience-item {
     background-color: #fff;
+    /* background-color: #f5edff; */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -113,4 +115,23 @@ body {
     font-size: 16px;
     color: #666;
     margin-bottom: 5px;
+}
+
+.view-resume-link {
+    display: inline-block;
+    /* margin-top: 20px; */
+    /* color: #432fbf; Dark purple text color */
+    text-decoration: none;
+    /* position: absolute; */
+    bottom: 10px;
+    right: 10px;
+    transition: transform 0.3s ease;
+    /* Add transition effect */
+}
+
+
+
+.arrow {
+    margin-left: 5px;
+    /* Add spacing between text and arrow */
 }

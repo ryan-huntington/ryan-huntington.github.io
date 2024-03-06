@@ -1,6 +1,7 @@
 import React from 'react';
-import self from '../photos/IMG_8543.jpg'
+import self from '../assets/IMG_8543.jpg'
 import './styles.css'
+import ResumePDF from '../assets/Resume_Huntington2024.pdf'
 
 function AboutMe() {
   return (
@@ -34,6 +35,10 @@ function AboutMe() {
         <div className='portrait'>
           <img src={self} alt="Self portrait of Ryan Huntington" />
         </div>
+
+      </div>
+      <div className='contact-container'>
+        <p>this section will be about contacting me, email and phone</p>
       </div>
       <div className='work-experience'>
         <h2>Work Experience</h2>
@@ -47,11 +52,31 @@ function AboutMe() {
             <li>Collaborated cross-functionally to integrate UI/UX, ensuring seamless user experience</li>
           </ul>
         </div>
-        <p>also include a link to my resume here (will also put in navbar)</p>
+
+        <div className='experience-item'>
+          <h3>Software Development Intern</h3>
+          <p className='company'>The CBORD Group</p>
+          <p className='duration'>April 2022 - May 2023</p>
+          <ul className='responsibilities'>
+            <li>Troubleshoot known issues of their main software, averaging around 10 problems per week</li>
+            <li>Worked alongside senior employees to develop frontend and backend features to provide functional, user-friendly software to be used by over 500 institutions</li>
+            <li>Enabled scalable software development through agile methodologies with internal teams</li>
+          </ul>
+        </div>
+        <div className='experience-item'>
+          <h3>Instructor</h3>
+          <p className='company'>Mathnasium</p>
+          <p className='duration'>May 2021 - December 2021</p>
+          <ul className='responsibilities'>
+            <li>Developed strong communication skills to instruct kids on foundational mathematical concept</li>
+            <li>Helped kids understand basic coding using different coding languages through mentorship</li>
+          </ul>
+        </div>
+        <a href={ResumePDF} target="_blank" className="view-resume-link">
+          View Full Resume <span className="arrow">&#8599;</span>
+        </a>
       </div>
-      <div>
-        <p>this section will be about contacting me, email and phone</p>
-      </div>
+
     </div>
   );
 }
