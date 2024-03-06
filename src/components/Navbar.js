@@ -1,28 +1,28 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import './Navbar.css'
 import React from "react";
-import {FaInstagram, FaGithub, FaLinkedin} from "react-icons/fa"
+import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa"
 
-function Navbar (props){
-    
-    return(
+function Navbar(props) {
+
+    return (
         <nav className="navbar">
             <div className="pages">
-                {props.items.map( (item, i)  => (
-                    <CustomLink 
-                    to={item.to} 
-                    key={item.text}
-                    i={i}
-                    item={item}
-                    title={item.text}
-                    onClick={() => props.changeActiveNavItem(i)}
+                {props.items.map((item, i) => (
+                    <CustomLink
+                        to={item.to}
+                        key={item.text}
+                        i={i}
+                        item={item}
+                        title={item.text}
+                        onClick={() => props.changeActiveNavItem(i)}
                     >
                         {item.text}
                     </CustomLink>
                 ))}
                 <div className="nav-item-highlighter" />
             </div>
-            
+
             <ul className="social-container">
                 <li>
                     <a href="https://www.instagram.com/ryan.huntington/"
@@ -30,8 +30,8 @@ function Navbar (props){
                         target="_blank"
                         rel="noreferrer"
                         title="Follow me on Instagram"
-                        >
-                            <FaInstagram />
+                    >
+                        <FaInstagram />
                     </a>
                 </li>
                 <li>
@@ -40,8 +40,8 @@ function Navbar (props){
                         target="_blank"
                         rel="noreferrer"
                         title="Follow me on GitHub"
-                        >
-                            <FaGithub />
+                    >
+                        <FaGithub />
                     </a>
                 </li>
                 <li>
@@ -50,8 +50,8 @@ function Navbar (props){
                         target="_blank"
                         rel="noreferrer"
                         title="Follow me on LinkedIn"
-                        >
-                            <FaLinkedin />
+                    >
+                        <FaLinkedin />
                     </a>
                 </li>
             </ul>
@@ -61,20 +61,20 @@ function Navbar (props){
 }
 export default Navbar;
 
-function CustomLink({to, children, item, i, ...props}){
+function CustomLink({ to, children, item, i, ...props }) {
     const resolvedPath = useResolvedPath(to)
-    const isActive = useMatch({path: resolvedPath.pathname, end: true})
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true })
     return (
-        <Link 
+        <Link
             to={to}
-            {...props} 
+            {...props}
             className={`nav-item item-${i} ${isActive ? "active" : ""} `}
         >
             <span className="icon">
                 {item.icon}
             </span>
             <span className="nav-item-text">
-                { children }
+                {children}
             </span>
         </Link>
     )

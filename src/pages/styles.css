@@ -5,36 +5,41 @@
 body {
     margin: 0;
 }
+
 .page {
     max-width: 75%;
     margin: 0 auto;
     padding: 20px;
+
 }
+
 @media screen and (min-width: 700px) {
     .page {
-      padding: 40px;
+        padding: 40px;
     }
-  }
+}
 
-  /* <!-- About me section > */
+/* <!-- About me section > */
 .bio-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap-reverse;
     position: realtive;
-} 
+
+}
 
 .bio-text {
     margin-bottom: 20px;
     line-height: 1.5;
-    width: calc(100% - 400px); /* Adjust width to accommodate portrait div */
+    width: calc(100% - 420px);
+    /* Adjust width to accommodate portrait div */
+    margin-right: 20px;
 }
+
 .portrait {
     width: 400px;
-    /* margin-right: 20px; */
-    /* position: relative;
-    display: inline-block; */
+
 }
 
 .portrait img {
@@ -43,14 +48,69 @@ body {
     display: block;
     border-radius: 5px;
 }
+
 @media screen and (max-width: 900px) {
     .bio-text {
-      width: 100%; /* Set width to full on smaller screens */
+        width: 100%;
+        /* Set width to full on smaller screens */
     }
-  
+
     .portrait {
-      margin-right: 0; /* Remove margin on smaller screens */
-      margin-bottom: 20px; /* Add margin below the image */
-      width: 100%; /* Set width to full on smaller screens */
+        margin-right: 0;
+        /* Remove margin on smaller screens */
+        margin-bottom: 20px;
+        /* Add margin below the image */
+        width: 100%;
+        /* Set width to full on smaller screens */
     }
-  }
+}
+
+/* <!-- Work Experience > */
+.work-experience {
+    margin-top: 2s0px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.experience-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.job-title {
+    font-size: 24px;
+    color: #333;
+}
+
+.company {
+    font-style: italic;
+    color: #666;
+}
+
+.duration {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.responsibilities {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.responsibilities li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
