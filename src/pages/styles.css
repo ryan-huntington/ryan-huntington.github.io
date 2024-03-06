@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+.page {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+}
+@media screen and (min-width: 700px) {
+    .page {
+      padding: 40px;
+    }
+  }
+
+  /* <!-- About me section > */
+.bio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    position: realtive;
+} 
+
+.bio-text {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    width: calc(100% - 400px); /* Adjust width to accommodate portrait div */
+}
+.portrait {
+    width: 400px;
+    /* margin-right: 20px; */
+    /* position: relative;
+    display: inline-block; */
+}
+
+.portrait img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+@media screen and (max-width: 900px) {
+    .bio-text {
+      width: 100%; /* Set width to full on smaller screens */
+    }
+  
+    .portrait {
+      margin-right: 0; /* Remove margin on smaller screens */
+      margin-bottom: 20px; /* Add margin below the image */
+      width: 100%; /* Set width to full on smaller screens */
+    }
+  }

@@ -2,7 +2,7 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import AboutMe from './pages/AboutMe';
-import Navbar from './Navbar';
+import Navbar from './components/Navbar';
 import React, { useState } from "react";
 import {FaHome, FaInbox, FaUser} from "react-icons/fa"
 
