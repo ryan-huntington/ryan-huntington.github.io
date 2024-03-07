@@ -96,6 +96,7 @@ body {
 
     .bio-text {
         width: 100%;
+        margin-right: 0px;
         /* Set width to full on smaller screens */
     }
 
@@ -177,6 +178,6 @@ body {
 
 
 .arrow {
-    margin-left: 5px;
-    /* Add spacing between text and arrow */
+    transform: rotate(45deg);
+
 }

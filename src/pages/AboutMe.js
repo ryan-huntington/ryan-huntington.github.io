@@ -3,6 +3,7 @@ import self from '../assets/IMG_8543.jpg'
 import './styles.css'
 import ResumePDF from '../assets/Resume_Huntington2024.pdf'
 import { IoIosCall, IoIosMail } from "react-icons/io"
+import { FaArrowUp } from "react-icons/fa"
 
 function AboutMe() {
   return (
@@ -90,7 +91,7 @@ function AboutMe() {
           </ul>
         </div>
         <a href={ResumePDF} target="_blank" rel="noreferrer" className="view-resume-link">
-          View Full Resume <span className="arrow">&#8599;</span>
+          View Full Resume <span className="arrow">{<FaArrowUp className='arrow' />}</span>
         </a>
       </div>
 
