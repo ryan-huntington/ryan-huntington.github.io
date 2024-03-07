@@ -52,7 +52,7 @@ function AboutMe() {
           <span className='contact-icon'>
             <IoIosCall />
           </span>
-          <a href='tel:+7605329830' title="phone number" className='info-text'>+1 (760) 532-9830</a>
+          <a href='tel:+17605329830' title="phone number" className='info-text'>+1 (760) 532-9830</a>
         </div>
       </div>
 
