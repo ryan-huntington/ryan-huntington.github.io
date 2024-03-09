@@ -14,7 +14,7 @@ function Navbar(props) {
         props.changeActiveNavItem(i)
     }
     return (
-        <div>
+        <div className="bar">
             <nav className="navbar">
                 <div className="pages">
                     {props.items.map((item, i) => (
