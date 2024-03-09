@@ -6,11 +6,11 @@ import './styles.css'
 function Home() {
   return (
     <div>
-      <svg id="svg-background" className="background" viewBox="0 0 1920 880">
+      <svg id="svg-background" className="background" viewBox="0 0 1920 880" preserveAspectRatio='none'>
         <g>
           <linearGradient id="svg-gradient" x1="0" x2="1" y1="0" y2="0">
-            <stop stop-color="#4658ac" offset="0"></stop>
-            <stop stop-color="#e7008a" offset="1"></stop>
+            <stop stopColor="#4658ac" offset="0"></stop>
+            <stop stopColor="#e7008a" offset="1"></stop>
           </linearGradient>
           <path d="" fill="url(#svg-gradient)" opacity=".4">
             <animate
@@ -55,14 +55,19 @@ function Home() {
         </g>
       </svg>
       <div className='page'>
-
-        <h1>Welcome</h1>
-        <p>My name is Ryan Huntington. I'm a software engineer with skills in building applications
-          and deep learning. Currently, I'm working on completing my Bachelors of Science at Baylor University.
-        </p>
+        {/* <div className='welcome-page'>
+          
+        </div> */}
+        <div className='welcome-text' >
+          <h1>Welcome</h1>
+          <p>My name is Ryan Huntington. I'm a software engineer with skills in building applications
+            and deep learning. Currently, I'm working on completing my Bachelors of Science at Baylor University.
+          </p>
+        </div>
         <div className='projects-button'>
           <Link to="/projects">Explore my Projects!</Link>
         </div>
+
       </div>
     </div>
 

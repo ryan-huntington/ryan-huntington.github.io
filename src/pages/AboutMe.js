@@ -46,13 +46,13 @@ function AboutMe() {
           <span className='contact-icon'>
             <IoIosMail />
           </span>
-          <a href='mailto:ryanhuntington12@gmail.com' title="email" className='info-text'>ryanhuntington12@gmail.com</a>
+          <a href='mailto:ryanhuntington12@gmail.com' className='info-text'>ryanhuntington12@gmail.com</a>
         </div>
         <div className='contact-info'>
           <span className='contact-icon'>
             <IoIosCall />
           </span>
-          <a href='tel:+17605329830' title="phone number" className='info-text'>+1 (760) 532-9830</a>
+          <a href='tel:+17605329830' className='info-text'>+1 (760) 532-9830</a>
         </div>
       </div>
 
