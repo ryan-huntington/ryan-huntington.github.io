@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import projectsData from './projects/projectsData.json'
+import projectsData from '../assets/projectsData.json'
 import './styles.css'
-import ProjectSquare from './projects/ProjectSquare';
+import ProjectSquare from '../components/ProjectSquare';
 import FilterDropdown from '../components/FilterDropdown';
 
 function Projects() {
@@ -46,29 +46,34 @@ function Projects() {
   return (
     <div className='page'>
       <h1>Projects</h1>
-      <FilterDropdown
-        options={['React', 'Python', 'JavaScript', 'HTML', 'CSS']}
-        selectedValues={selectedTags}
-        setSelectedValues={handleTagFilter}
-      />
-
-      <FilterDropdown
-        options={['1-3 years', '4-6 years', '7-9 years']}
-        selectedValues={selectedExperienceLevels}
-        setSelectedValues={handleExperienceLevelFilter}
-      />
-
-      <FilterDropdown
-        options={['Software Engineering', 'Deep Learning']}
-        selectedValues={selectedProjectTypes}
-        setSelectedValues={handleProjectTypeFilter}
-      />
-      {filteredProjects.map(project => (
-        <ProjectSquare
-          key={project.id}
-          project={project}
+      <div className='filter-container'>
+        <FilterDropdown
+          options={['React', 'Python', 'JavaScript', 'HTML', 'CSS']}
+          selectedValues={selectedTags}
+          setSelectedValues={handleTagFilter}
         />
-      ))}
+
+        <FilterDropdown
+          options={['1-3 years', '4-6 years', '7-9 years']}
+          selectedValues={selectedExperienceLevels}
+          setSelectedValues={handleExperienceLevelFilter}
+        />
+
+        <FilterDropdown
+          options={['Software Engineering', 'Deep Learning']}
+          selectedValues={selectedProjectTypes}
+          setSelectedValues={handleProjectTypeFilter}
+        />
+      </div>
+      <div className='projects-container'>
+        {filteredProjects.map(project => (
+          <ProjectSquare
+            key={project.id}
+            project={project}
+          />
+        ))}
+      </div>
+
     </div>
   );
 }

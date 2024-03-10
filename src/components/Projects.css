@@ -1,0 +1,40 @@
+/* Style for the filter dropdown container */
+.filter-dropdown {
+    margin-bottom: 20px;
+}
+
+/* Style for the select element */
+.filter-dropdown select {
+    width: 200px;
+    /* Set the width of the dropdown */
+    padding: 8px;
+    /* Add padding */
+    font-size: 16px;
+    /* Set font size */
+    border: 1px solid #ccc;
+    /* Add border */
+    border-radius: 4px;
+    /* Add border radius */
+    appearance: none;
+    /* Remove default arrow */
+    background-color: #fff;
+    /* Set background color */
+    cursor: pointer;
+    /* Change cursor on hover */
+}
+
+/* Style for the selected options */
+.filter-dropdown select option {
+    padding: 8px;
+    /* Add padding */
+    font-size: 16px;
+    /* Set font size */
+    cursor: pointer;
+    /* Change cursor on hover */
+}
+
+/* Style for the selected options on hover */
+.filter-dropdown select option:hover {
+    background-color: #f0f0f0;
+    /* Change background color on hover */
+}
