@@ -51,18 +51,21 @@ function Projects() {
           options={['React', 'Python', 'JavaScript', 'HTML', 'CSS']}
           selectedValues={selectedTags}
           setSelectedValues={handleTagFilter}
+          placeholder={'Languages'}
         />
 
         <FilterDropdown
           options={['1-3 years', '4-6 years', '7-9 years']}
           selectedValues={selectedExperienceLevels}
           setSelectedValues={handleExperienceLevelFilter}
+          placeholder={'Experience'}
         />
 
         <FilterDropdown
           options={['Software Engineering', 'Deep Learning']}
           selectedValues={selectedProjectTypes}
           setSelectedValues={handleProjectTypeFilter}
+          placeholder={'Project Type'}
         />
       </div>
       <div className='projects-container'>

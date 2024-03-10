@@ -1,43 +1,27 @@
 import React, { useState } from 'react';
 import './Projects.css'
+import Select from "react-select"
 
-const FilterDropdown = ({ options, selectedValues, setSelectedValues }) => {
-    const [isOpen, setIsOpen] = useState(false)
+const FilterDropdown = ({ options, selectedValues, setSelectedValues, placeholder }) => {
 
-    const handleOptionToggle = (option) => {
-        if (selectedValues.includes(option)) {
-            setSelectedValues(selectedValues.filter(value => value !== option));
-        } else {
-            setSelectedValues([...selectedValues, option]);
-        }
+    const handleChange = (selectedOptions) => {
+        setSelectedValues(selectedOptions.map(option => option.value));
     };
 
+    const selectedOptions = selectedValues.map(value => ({ value, label: value }));
     return (
         <div className="filter-dropdown">
 
-            {/* {isOpen && (
-                <select
-                    multiple
-                    readOnly
-                    value={selectedValues}
-                    onClick={(e) => handleOptionToggle(e.target.value)}
-                >
-                    {options.map(option => (
-                        <option key={option} value={option}>
-                            {option}
-                        </option>
-                    ))}
-                </select>
-            )}
-            <div className="dropdown-header" onClick={() => setIsOpen(!isOpen)}>
-                <span>Selected Filters:</span>
-                <ul>
-                    {selectedValues.map((value, index) => (
-                        <li key={index}>{value}</li>
-                    ))}
-                </ul>
-                <span>&#9660;</span>
-            </div> */}
+            <Select
+                options={options.map(option => ({ value: option, label: option }))}
+                value={selectedOptions}
+                onChange={handleChange}
+                isMulti
+                hideSelectedOptions={false}
+                closeMenuOnSelect={false}
+                placeholder={placeholder}
+                classNamePrefix='filter'
+            />
 
 
         </div>
