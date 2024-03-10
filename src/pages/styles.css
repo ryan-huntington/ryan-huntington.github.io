@@ -252,11 +252,41 @@ body {
     display: flex;
     justify-content: space-around;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    /* gap: 2rem; */
     align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.ending {
+    /* position: fixed; */
+    /* bottom: 10px; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    text-align: center;
+    padding: 10px;
+    /* text-align: center; */
+    /* position: fixed; */
+    /* bottom: 0; */
+    width: 100%;
+}
+
+.ending p {
+    margin: 0;
+
+}
+
+.ending a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.ending a:hover {
+    text-decoration: underline;
 }

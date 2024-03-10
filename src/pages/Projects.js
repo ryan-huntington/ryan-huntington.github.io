@@ -76,6 +76,11 @@ function Projects() {
           />
         ))}
       </div>
+      <div className="ending">
+        <p>The code for this website can be found <a href="https://github.com/ryan-huntington/ryan-huntington.github.io" target="_blank"
+          rel="noreferrer"
+          title="Website Github">here</a>.</p>
+      </div>
 
     </div>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Projects.css'
 
 const ProjectSquare = ({ project }) => {
     return (
@@ -8,7 +9,9 @@ const ProjectSquare = ({ project }) => {
             <p>Tags: {project.tags.join(', ')}</p>
             <p>Experience Level: {project.experienceLevel}</p>
             <p>Project Type: {project.projectType}</p>
-            <a href={project.link}>Learn More</a>
+            <a href={project.link} target="_blank"
+                rel="noreferrer"
+            >Learn More</a>
         </div>
     );
 };
