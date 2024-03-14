@@ -17,9 +17,9 @@ function Projects() {
   useEffect(() => {
     const tagsArray = [...new Set(projectsData.map(item => item.tags).flat())]
     setTags(tagsArray);
-    const typeArray = [... new Set(projectsData.map(item => item.projectType))];
+    const typeArray = [...new Set(projectsData.map(item => item.projectType))];
     setType(typeArray)
-    const experienceArray = [... new Set(projectsData.map(item => item.experienceLevel))];
+    const experienceArray = [...new Set(projectsData.map(item => item.experienceLevel))];
     setExperience(experienceArray)
   }, [])
 

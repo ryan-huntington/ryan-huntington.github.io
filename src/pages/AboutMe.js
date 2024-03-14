@@ -86,7 +86,7 @@ function AboutMe() {
           <p className='company'>Mathnasium</p>
           <p className='duration'>May 2021 - December 2021</p>
           <ul className='responsibilities'>
-            <li>Developed strong communication skills to instruct kids on foundational mathematical concept</li>
+            <li>Developed strong communication skills to instruct kids on foundational mathematical concepts</li>
             <li>Helped kids understand basic coding using different coding languages through mentorship</li>
           </ul>
         </div>
