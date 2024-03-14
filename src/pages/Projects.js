@@ -10,6 +10,19 @@ function Projects() {
   const [selectedExperienceLevels, setSelectedExperienceLevels] = useState([]);
   const [selectedProjectTypes, setSelectedProjectTypes] = useState([]);
 
+  const [tags, setTags] = useState([])
+  const [experience, setExperience] = useState([])
+  const [type, setType] = useState([])
+
+  useEffect(() => {
+    const tagsArray = [...new Set(projectsData.map(item => item.tags).flat())]
+    setTags(tagsArray);
+    const typeArray = [... new Set(projectsData.map(item => item.projectType))];
+    setType(typeArray)
+    const experienceArray = [... new Set(projectsData.map(item => item.experienceLevel))];
+    setExperience(experienceArray)
+  }, [])
+
   useEffect(() => {
     const filterProjects = () => {
       let filtered = projectsData;
@@ -48,21 +61,21 @@ function Projects() {
       <h1>Projects</h1>
       <div className='filter-container'>
         <FilterDropdown
-          options={['React', 'Python', 'JavaScript', 'HTML', 'CSS']}
+          options={tags}
           selectedValues={selectedTags}
           setSelectedValues={handleTagFilter}
           placeholder={'Languages'}
         />
 
         <FilterDropdown
-          options={['1-3 years', '4-6 years', '7-9 years']}
+          options={experience}
           selectedValues={selectedExperienceLevels}
           setSelectedValues={handleExperienceLevelFilter}
           placeholder={'Experience'}
         />
 
         <FilterDropdown
-          options={['Software Engineering', 'Deep Learning']}
+          options={type}
           selectedValues={selectedProjectTypes}
           setSelectedValues={handleProjectTypeFilter}
           placeholder={'Project Type'}
