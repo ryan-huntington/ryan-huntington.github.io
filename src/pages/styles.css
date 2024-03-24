@@ -232,11 +232,11 @@ body {
     color: #f9f9f9;
     text-decoration: none;
     padding: 1rem;
-    text-shadow:
-        -0.5px -0.5px 0 #000,
-        0.5px -0.5px 0 #000,
-        -0.5px 0.5px 0 #000,
-        0.5px 0.5px 0 #000;
+    /* text-shadow:
+        -0.25px -0.25px 0 #000,
+        0.25px -0.25px 0 #000,
+        -0.25px 0.25px 0 #000,
+        0.25px 0.25px 0 #000; */
 }
 
 .projects-button:hover {

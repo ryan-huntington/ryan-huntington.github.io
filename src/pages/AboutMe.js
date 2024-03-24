@@ -65,9 +65,10 @@ function AboutMe() {
           <p className='company'>Paycom</p>
           <p className='duration'>May 2023 - August 2023</p>
           <ul className='responsibilities'>
-            <li>Created graph-generating app using custom SQL queries on 10M-entry database</li>
-            <li>Optimized algorithms for efficient data retrieval and processing, enhancing query performance</li>
-            <li>Collaborated cross-functionally to integrate UI/UX, ensuring seamless user experience</li>
+            < li>Contributed as a full-stack engineer, playing a pivotal role in both front-end and back-end development projects</li>
+            <li>Led the development of a graph-generating application, focusing on backend functionality and database management to support data visualization needs</li>
+            <li>Optimized SQL queries across multiple tables with 10 million entries, reducing query execution time from over a minute to under a second</li>
+            <li>Collaborated cross-functionally with UI/UX teams to integrate front-end design elements seamlessly with backend functionality, ensuring a cohesive and intuitive user experience</li>
           </ul>
         </div>
 
@@ -76,9 +77,9 @@ function AboutMe() {
           <p className='company'>The CBORD Group</p>
           <p className='duration'>April 2022 - May 2023</p>
           <ul className='responsibilities'>
-            <li>Troubleshoot known issues of their main software, averaging around 10 problems per week</li>
-            <li>Worked alongside senior employees to develop frontend and backend features to provide functional, user-friendly software to be used by over 500 institutions</li>
-            <li>Enabled scalable software development through agile methodologies with internal teams</li>
+            <li>Resolved an average of 10 known issues per week within the main software, demonstrating strong troubleshooting skills and contributing to enhanced software reliability</li>
+            <li>Collaborated with senior employees to design, develop, and implement both frontend and backend features, ensuring the delivery of functional and user-friendly software tailored to the needs of over 500 institutions</li>
+            <li>Contributed to the adoption of agile methodologies within internal teams, fostering a more scalable approach to software development and improving efficiency in project delivery</li>
           </ul>
         </div>
         <div className='experience-item'>
@@ -86,10 +87,13 @@ function AboutMe() {
           <p className='company'>Mathnasium</p>
           <p className='duration'>May 2021 - December 2021</p>
           <ul className='responsibilities'>
-            <li>Developed strong communication skills to instruct kids on foundational mathematical concepts</li>
-            <li>Helped kids understand basic coding using different coding languages through mentorship</li>
+            <li>Developed and honed strong communication skills while instructing and mentoring over 50 students aged kindergarten to 8th grade in foundational mathematical concepts</li>
+            <li>Mentored students in basic coding concepts using various programming languages, including Minecraft, Roblox, and Python, to foster computational thinking and problem-solving abilities</li>
+            <li>Facilitated interactive learning experiences in robotics using Lego Mindstorms, guiding students in hands-on projects to apply mathematical and engineering principles</li>
+            <li>Led a camp focusing on mathematics, coding, and robotics, providing a dynamic and engaging learning environment for students</li>
           </ul>
         </div>
+
         <a href={ResumePDF} target="_blank" rel="noreferrer" className="view-resume-link">
           View Full Resume <span className="arrow">{<FaArrowUp className='arrow' />}</span>
         </a>
