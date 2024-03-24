@@ -38,8 +38,9 @@ function Projects() {
       if (selectedProjectTypes.length > 0) {
         filtered = filtered.filter(project => selectedProjectTypes.includes(project.projectType));
       }
+      const sortedFiltered = filtered.sort((a, b) => a.name.localeCompare(b.name))
 
-      setFilteredProjects(filtered);
+      setFilteredProjects(sortedFiltered);
     };
     filterProjects();
 

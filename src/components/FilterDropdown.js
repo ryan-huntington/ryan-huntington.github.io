@@ -8,12 +8,14 @@ const FilterDropdown = ({ options, selectedValues, setSelectedValues, placeholde
         setSelectedValues(selectedOptions.map(option => option.value));
     };
 
+    const sortedOptions = options.sort((a, b) => a.localeCompare(b))
+
     const selectedOptions = selectedValues.map(value => ({ value, label: value }));
     return (
         <div className="filter-dropdown">
 
             <Select
-                options={options.map(option => ({ value: option, label: option }))}
+                options={sortedOptions.map(option => ({ value: option, label: option }))}
                 value={selectedOptions}
                 onChange={handleChange}
                 isMulti

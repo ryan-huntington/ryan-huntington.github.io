@@ -3,9 +3,15 @@
     margin-bottom: 20px;
     /* min-width: 200px; */
 }
+@media screen and (max-width: 850px) {
+    .filter-dropdown{
+        width: 300px;
+
+    }
+}
 
 .filter__control {
-    min-width: 200px;
+    min-width: 300px;
 }
 
 .filter__control:hover {
