@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.020e13a5.css",
-    "main.js": "/static/js/main.69002e70.js",
+    "main.css": "/static/css/main.2c77df8f.css",
+    "main.js": "/static/js/main.81ad01b6.js",
     "static/media/IMG_8543.jpg": "/static/media/IMG_8543.a437013aef6d1cb68e24.jpg",
     "static/media/Resume_Huntington2024.pdf": "/static/media/Resume_Huntington2024.1a851cad0e265a15396a.pdf",
     "index.html": "/index.html",
-    "main.020e13a5.css.map": "/static/css/main.020e13a5.css.map",
-    "main.69002e70.js.map": "/static/js/main.69002e70.js.map"
+    "main.2c77df8f.css.map": "/static/css/main.2c77df8f.css.map",
+    "main.81ad01b6.js.map": "/static/js/main.81ad01b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.020e13a5.css",
-    "static/js/main.69002e70.js"
+    "static/css/main.2c77df8f.css",
+    "static/js/main.81ad01b6.js"
   ]
 }
