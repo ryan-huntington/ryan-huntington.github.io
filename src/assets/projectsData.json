@@ -1,99 +1,97 @@
 [
-    {
-        "id": 1,
-        "name": "Power Rankings",
-        "description": "Application to set up \"fights\" between beloved fictional characters. Creates brackets in a tournament style.",
-        "tags": [
-            "Java",
-            "Swing",
-            "HTML"
-        ],
-        "experienceLevel": "1-3 years",
-        "projectType": "Software Engineering",
-        "link": "https://github.com/ryan-huntington/PowerRankings"
-    },
-    {
-        "id": 2,
-        "name": "RoadTripper",
-        "description": "A web application for allowing users to plot a road trip with curated stops along the route.",
-        "tags": [
-            "React",
-            "Java",
-            "Springboot",
-            "SQL",
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Kubernetes"
-        ],
-        "experienceLevel": "1-3 years",
-        "projectType": "Software Engineering",
-        "link": "https://github.com/ryan-huntington/RoadTripper"
-    },
-    {
-        "id": 3,
-        "name": "Budgeting Calculator",
-        "description": "An introductory deep learning project dedicated to learning a person's spending habits and creating a savings goal/budget plan.",
-        "tags": [
-            "Python",
-            "Jupyter Notebook"
-        ],
-        "experienceLevel": "4-6 years",
-        "projectType": "Machine Learning",
-        "link": "https://github.com/ryan-huntington/BudgetSavingsCalculator"
-    },
-    {
-        "id": 4,
-        "name": "MegEx",
-        "description": "A client-server pair modeling the functionality of HTTP/2.0. The client requests files and the server sends them, sometimes in parts, requiring the client to manage message order.",
-        "tags": [
-          "Java"
-        ],
-        "experienceLevel": "4-6 years",
-        "projectType": "Networking",
-        "link": "https://github.com/ryan-huntington/MegEx"
-      },
-      {
-        "id": 5,
-        "name": "JackUDP",
-        "description": "A client-server application utilizing UDP standards for communication. Allows for fast and lightweight data transmission between client and server.",
-        "tags": [
-          "Java"
-        ],
-        "experienceLevel": "4-6 years",
-        "projectType": "Networking",
-        "link": "https://github.com/ryan-huntington/JackUDP"
-      },
-      {
-        "id": 6,
-        "name": "Portfolio Website",
-        "description": "A personal portfolio website showcasing my projects and skills.",
-        "tags": [
-          "React",
-          "JavaScript",
-          "HTML",
-          "CSS"
-        ],
-        "experienceLevel": "4-6 years",
-        "projectType": "Software Engineering",
-        "link": "https://github.com/ryan-huntington/ryan-huntington.github.io"
-      },
-      {
-        "id": 7,
-        "name": "Baseball Database",
-        "description": "Custom webpage to streamline complicated queries on a baseball database containing player stats, team metrics, and historical data",
-        "tags": [
-          "Python",
-          "SQL",
-          "MariaDB",
-          "Flask",
-          "HTML",
-          "CSS"
-        ],
-        "experienceLevel": "1-3 years",
-        "projectType": "Software Engineering",
-        "link": "https://github.com/ryan-huntington/BaseballQueries"
-      }
-      
-      
+  {
+    "id": 1,
+    "name": "Power Rankings",
+    "description": "Application to set up \"fights\" between beloved fictional characters. Creates brackets in a tournament style.",
+    "tags": [
+      "Java",
+      "Swing",
+      "HTML"
+    ],
+    "experienceLevel": "1-3 years",
+    "projectType": "Software Engineering",
+    "link": "https://github.com/ryan-huntington/PowerRankings"
+  },
+  {
+    "id": 2,
+    "name": "RoadTripper",
+    "description": "A web application for allowing users to plot a road trip with curated stops along the route.",
+    "tags": [
+      "React",
+      "Java",
+      "Springboot",
+      "SQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Kubernetes"
+    ],
+    "experienceLevel": "1-3 years",
+    "projectType": "Software Engineering",
+    "link": "https://github.com/ryan-huntington/RoadTripper"
+  },
+  {
+    "id": 3,
+    "name": "Personal Finance Assistant",
+    "description": "An introductory deep learning project dedicated to learning a person's spending habits and creating a savings goal/budget plan.",
+    "tags": [
+      "Python",
+      "Jupyter Notebook"
+    ],
+    "experienceLevel": "4-6 years",
+    "projectType": "Machine Learning",
+    "link": "https://github.com/ryan-huntington/BudgetSavingsCalculator"
+  },
+  {
+    "id": 4,
+    "name": "MegEx",
+    "description": "A client-server pair modeling the functionality of HTTP/2.0. The client requests files and the server sends them, sometimes in parts, requiring the client to manage message order.",
+    "tags": [
+      "Java"
+    ],
+    "experienceLevel": "4-6 years",
+    "projectType": "Networking",
+    "link": "https://github.com/ryan-huntington/MegEx"
+  },
+  {
+    "id": 5,
+    "name": "JackUDP",
+    "description": "A client-server application utilizing UDP standards for communication. Allows for fast and lightweight data transmission between client and server.",
+    "tags": [
+      "Java"
+    ],
+    "experienceLevel": "4-6 years",
+    "projectType": "Networking",
+    "link": "https://github.com/ryan-huntington/JackUDP"
+  },
+  {
+    "id": 6,
+    "name": "Portfolio Website",
+    "description": "A personal portfolio website showcasing my projects and skills.",
+    "tags": [
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "experienceLevel": "4-6 years",
+    "projectType": "Software Engineering",
+    "link": "https://github.com/ryan-huntington/ryan-huntington.github.io"
+  },
+  {
+    "id": 7,
+    "name": "Baseball Database",
+    "description": "Custom webpage to streamline complicated queries on a baseball database containing player stats, team metrics, and historical data",
+    "tags": [
+      "Python",
+      "SQL",
+      "MariaDB",
+      "Flask",
+      "HTML",
+      "CSS"
+    ],
+    "experienceLevel": "1-3 years",
+    "projectType": "Software Engineering",
+    "link": "https://github.com/ryan-huntington/BaseballQueries"
+  }
 ]
