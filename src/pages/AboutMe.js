@@ -29,7 +29,7 @@ function AboutMe() {
             to create meaningful solutions that make a difference.
           </p>
           <p>
-            When I'm not immersed in projects, you can usually find me with my friends, taking care of my many plants, or pursuing my latest hobby.
+            When I'm not immersed in projects, you can usually find me with my friends, taking care of my many plants, or pursuing my latest hyperfixation.
             I'm always eager to explore new interests and find inspiration in unexpected places.
           </p>
           <p>Feel free to reach out—I'd love to connect and discuss how we can collaborate together.</p>
@@ -98,7 +98,15 @@ function AboutMe() {
           View Full Resume <span className="arrow">{<FaArrowUp className='arrow' />}</span>
         </a>
       </div>
+      {/* <div className='work-experience'>
+        <h2>Education</h2>
+        <div className='experience-item'>
+          <h3>Baylor University</h3>
+          <p className='company'>Bachelors of Science in Computer Science</p>
+          <p className='duration'>August 2020 - May 2024</p>
 
+        </div>
+      </div> */}
     </div>
   );
 }
