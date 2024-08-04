@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import React, { useState } from "react";
 import { FaHome, FaInbox, FaUser } from "react-icons/fa"
+import ALSRS from './pages/ALSRS';
 
 function App() {
   const [pages, setPages] = useState([{
@@ -38,7 +39,9 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<AboutMe />} />
+        <Route path="/alsrs" element={<ALSRS />} />
         <Route path="*" element={<Navigate to="/" />} />
+
       </Routes>
       <Footer />
     </>

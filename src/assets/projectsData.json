@@ -80,7 +80,7 @@
   },
   {
     "id": 7,
-    "name": "Baseball Database",
+    "name": "Baseball Queries",
     "description": "Custom webpage to streamline complicated queries on a baseball database containing player stats, team metrics, and historical data",
     "tags": [
       "Python",
@@ -93,5 +93,20 @@
     "experienceLevel": "1-3 years",
     "projectType": "Software Engineering",
     "link": "https://github.com/ryan-huntington/BaseballQueries"
+  },
+  {
+    "id": 8,
+    "name": "ALSRS",
+    "description": "Advanced Leopard Seal Recognition System (ALSRS) is able to detect leopard seals and identify them from an image. ",
+    "tags": [
+      "Python",
+      "Java",
+      "Jupyter Notebook",
+      "React",
+      "Springboot"
+    ],
+    "experienceLevel": "4-6 years",
+    "projectType": "Machine Learning",
+    "subpage": "/alsrs"
   }
 ]

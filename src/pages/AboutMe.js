@@ -61,6 +61,18 @@ function AboutMe() {
       <div className='work-experience'>
         <h2>Work Experience</h2>
         <div className='experience-item'>
+          <h3>Software Developer</h3>
+          <p className='company'>Paycom</p>
+          <p className='duration'>July 2024 - Present</p>
+          <ul className='responsibilities'>
+            < li>Contributed as a full-stack engineer, playing a pivotal role in both front-end and back-end development projects</li>
+            <li>Led the development of a graph-generating application, focusing on backend functionality and database management to support data visualization needs</li>
+            <li>Optimized SQL queries across multiple tables with 10 million entries, reducing query execution time from over a minute to under a second</li>
+            <li>Collaborated cross-functionally with UI/UX teams to integrate front-end design elements seamlessly with backend functionality, ensuring a cohesive and intuitive user experience</li>
+          </ul>
+        </div>
+
+        <div className='experience-item'>
           <h3>Software Development Intern</h3>
           <p className='company'>Paycom</p>
           <p className='duration'>May 2023 - August 2023</p>

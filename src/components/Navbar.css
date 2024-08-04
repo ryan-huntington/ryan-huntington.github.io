@@ -29,13 +29,15 @@ body {
   position: relative;
 }
 
+.navbar a:hover {
+  color: #fff;
+}
+
 .navbar a.active {
   color: #fff;
 }
 
-.navbar a:hover {
-  color: #fff;
-}
+
 
 .pages {
   flex: 75%;
