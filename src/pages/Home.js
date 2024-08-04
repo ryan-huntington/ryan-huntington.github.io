@@ -55,13 +55,11 @@ function Home() {
         </g>
       </svg>
       <div className='page'>
-        {/* <div className='welcome-page'>
-          
-        </div> */}
+
         <div className='welcome-text' >
           <h1>Welcome</h1>
           <p>My name is Ryan Huntington. I'm a software engineer with skills in building applications
-            and deep learning. Currently, I'm working on completing my Bachelors of Science at Baylor University.
+            and deep learning. Currently, I'm working as a Software Developer at Paycom.
           </p>
         </div>
         <div className='projects-button'>

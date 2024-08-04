@@ -17,7 +17,7 @@ function AboutMe() {
           </p>
           <p>
             My journey began in high school when I discovered my passion for computer science. I continued my education at Baylor University,
-            where I'm currently pursuing a degree in computer science, expected to graduate in May 2024. Throughout my academic journey,
+            where I pursued a degree in computer science, and graduated in May 2024. Throughout my academic journey,
             I've gained expertise in various web technologies, including React, Java, C++, Python, PHP, and MySQL. Additionally, I've developed
             a robust skill set in deep learning, specializing in neural networks, natural language processing, and computer vision. I have also
             developed a strong analytical mindset and proven leadership skills, demonstrating meticulous attention to detail in solving complex
