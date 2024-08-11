@@ -1,12 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './styles.css'
-
+import React from "react";
+import { Link } from "react-router-dom";
+import "./styles.css";
 
 function Home() {
   return (
     <div>
-      <svg id="svg-background" className="background" viewBox="0 0 1920 880" preserveAspectRatio='none'>
+      <svg
+        id="svg-background"
+        className="background"
+        viewBox="0 0 1920 880"
+        preserveAspectRatio="none"
+      >
         <g>
           <linearGradient id="svg-gradient" x1="0" x2="1" y1="0" y2="0">
             <stop stopColor="#4658ac" offset="0"></stop>
@@ -54,21 +58,20 @@ function Home() {
           </path>
         </g>
       </svg>
-      <div className='page'>
-
-        <div className='welcome-text' >
+      <div className="page">
+        <div className="welcome-text">
           <h1>Welcome</h1>
-          <p>My name is Ryan Huntington. I'm a software engineer with skills in building applications
-            and deep learning. Currently, I'm working as a Software Developer at Paycom.
+          <p>
+            My name is Ryan Huntington. I'm a software engineer with skills in
+            building applications and deep learning. Currently, I'm working as a
+            Software Developer at Paycom.
           </p>
         </div>
-        <div className='projects-button'>
+        <div className="projects-button">
           <Link to="/projects">Explore my Projects!</Link>
         </div>
-
       </div>
     </div>
-
   );
 }
 

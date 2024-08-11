@@ -1,14 +1,8 @@
-import React from 'react';
-import './styles.css'
+import React from "react";
+import "./styles.css";
 
 function ALSRS() {
-
-    return (
-        <div>
-            AAAA
-        </div>
-    )
-
+  return <div>AAAA</div>;
 }
 
 export default ALSRS;

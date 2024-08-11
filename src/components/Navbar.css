@@ -37,8 +37,6 @@ body {
   color: #fff;
 }
 
-
-
 .pages {
   flex: 75%;
   display: flex;
@@ -57,27 +55,27 @@ body {
   transform: translateX(-50%) translateY(-50%);
   z-index: 1;
   visibility: hidden;
-  transition: left .5s;
+  transition: left 0.5s;
 }
 
 .pages .nav-item.active {
   color: #fff;
 }
 
-.pages .nav-item.active~.nav-item-highlighter {
+.pages .nav-item.active ~ .nav-item-highlighter {
   visibility: visible;
 }
 
-.pages .nav-item.active.item-0~.nav-item-highlighter {
-  left: 16.5%
+.pages .nav-item.active.item-0 ~ .nav-item-highlighter {
+  left: 16.5%;
 }
 
-.pages .nav-item.active.item-1~.nav-item-highlighter {
-  left: 49%
+.pages .nav-item.active.item-1 ~ .nav-item-highlighter {
+  left: 49%;
 }
 
-.pages .nav-item.active.item-2~.nav-item-highlighter {
-  left: 83%
+.pages .nav-item.active.item-2 ~ .nav-item-highlighter {
+  left: 83%;
 }
 
 .navbar a {
@@ -90,7 +88,6 @@ body {
   cursor: pointer;
   z-index: 2;
 }
-
 
 .navbar .nav-item .fas,
 .navbar .nav-item .icon {
@@ -146,7 +143,6 @@ a.social {
   display: inline-block;
   text-decoration: none;
   font-size: 1.5rem;
-
 }
 
 a.social:hover {
@@ -158,9 +154,6 @@ a.social:hover {
   opacity: 0;
   display: none;
 }
-
-
-
 
 @media screen and (max-width: 850px) {
   .nav-btn {
@@ -232,8 +225,7 @@ a.social:hover {
     display: none;
   }
 
-
-  .pages .nav-item.active~.nav-item-highlighter {
+  .pages .nav-item.active ~ .nav-item-highlighter {
     visibility: hidden;
   }
 
@@ -246,7 +238,6 @@ a.social:hover {
     color: #fff;
   }
 
-
   .icon {
     margin-right: 10px;
   }
@@ -254,5 +245,4 @@ a.social:hover {
   .icon svg {
     transform: translateY(3px);
   }
-
 }
