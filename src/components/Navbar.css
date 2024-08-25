@@ -22,9 +22,9 @@ body {
   gap: 2rem;
 
   padding: 0 2rem;
-  height: 4rem;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  height: 4.5rem;
+  /* border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
   position: relative;
 }
@@ -203,10 +203,14 @@ a.social:hover {
     font-size: 30px;
     margin-top: 60px;
   }
+  .sidebar-menu .pages li {
+    font-size: 30px;
+  }
 
   .nav-item {
     color: #999;
     text-decoration: none;
+    font-size: 30px;
   }
 
   a.social {

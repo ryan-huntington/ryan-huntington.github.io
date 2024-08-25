@@ -1,12 +1,38 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"); */
+
 * {
   box-sizing: border-box;
   /* border-color: RED;
     border-style: solid;
     border-width: 1px; */
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: "Playfair Display", serif; */
+  color: #444; /* Softer dark color for headers */
+  /* font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+p,
+a,
+li {
+  font-family: "Lato", sans-serif;
+  color: #666; /* Lighter gray for paragraph text */
+  font-size: 15px;
+}
 
 body {
   margin: 0;
+  background-color: #f8f8f8;
 }
 
 .page {
@@ -69,7 +95,7 @@ body {
 }
 
 .info-text {
-  font-size: 16px;
+  /* font-size: 16px; */
   color: #333;
   text-decoration: none;
 }
@@ -200,8 +226,15 @@ body {
   top: 15%;
   width: 75%;
   color: #f9f9f9;
+
   text-shadow: -0.25px -0.25px 0 #000, 0.25px -0.25px 0 #000,
     -0.25px 0.25px 0 #000, 0.25px 0.25px 0 #000;
+}
+.welcome-text p {
+  color: #f9f9f9;
+}
+.welcome-text h1 {
+  color: #f9f9f9;
 }
 
 .projects-button {
