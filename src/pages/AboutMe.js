@@ -80,23 +80,18 @@ function AboutMe() {
           <p className="duration">July 2024 - Present</p>
           <ul className="responsibilities">
             <li>
-              Contributed as a full-stack engineer, playing a pivotal role in
-              both front-end and back-end development projects
+              Engaged in full-stack development on a team focused on optimizing
+              payroll software for compliance with the Affordable Care Act (ACA)
             </li>
             <li>
-              Led the development of a graph-generating application, focusing on
-              backend functionality and database management to support data
-              visualization needs
+              Developed solutions for complex business challenges, such as
+              ensuring compliance with changing tax regulations and streamlining
+              data workflows
             </li>
             <li>
-              Optimized SQL queries across multiple tables with 10 million
-              entries, reducing query execution time from over a minute to under
-              a second
-            </li>
-            <li>
-              Collaborated cross-functionally with UI/UX teams to integrate
-              front-end design elements seamlessly with backend functionality,
-              ensuring a cohesive and intuitive user experience
+              Contributed to system performance improvements, reducing
+              processing times and enhancing the reliability of tax-related
+              reporting tools
             </li>
           </ul>
         </div>
