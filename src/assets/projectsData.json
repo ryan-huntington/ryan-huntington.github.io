@@ -78,6 +78,39 @@
     "tags": ["Python", "Java", "Jupyter Notebook", "React", "Springboot"],
     "experienceLevel": "4-6 years",
     "projectType": "Machine Learning",
-    "subpage": "/alsrs"
+    "subpage": "/alsrs",
+    "documents": [],
+    "content": [
+      {
+        "type": "title",
+        "content": "Advanced Leopard Seal Recognition System (ALSRS)"
+      },
+      {
+        "type": "video",
+        "src": "ALSRSDemoVideo.mp4",
+        "controls": true
+      },
+      {
+        "type": "header",
+        "content": "Project Overview"
+      },
+      {
+        "type": "paragraph",
+        "content": "The Advanced Leopard Seal Recognition System (ALSRS) is a set of machine learning (ML) models, training weights, and API endpoints designed to process images of leopard seals (Hydrurga leptonyx) and provide identifications for the individual specimens in those images. The API was designed with the end-goal of integration with Happywhale to speed their leopard seal identification process in the same way that they have implemented identification processes for various species of whale."
+      },
+      {
+        "type": "paragraph",
+        "content": "The ALSRS works by running images through two ML models: the first designed to detect the presence of leopard seals in an image and provide a bounding box for each specimen, and the second designed to analyze the area within that bounding box for identifying markings that can be used to provide a specific ID for that specimen based on pre-existing IDs from Happywhale and our research team."
+      },
+      {
+        "type": "paragraph",
+        "content": "A demo of the frontend can be viewed in the video above. "
+      },
+      {
+        "type": "image",
+        "src": "non-seal-box.png",
+        "alt": "Bounding box denoting the postion of leopard seal attacking sea lions and penguins. Confidence is 0.98"
+      }
+    ]
   }
 ]

@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 
 function ALSRS() {
-  return <div>AAAA</div>;
+  return <div className="page">AAAA</div>;
 }
 
 export default ALSRS;

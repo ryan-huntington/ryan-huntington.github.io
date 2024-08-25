@@ -277,3 +277,21 @@ body {
 .ending a:hover {
   text-decoration: underline;
 }
+
+/* <!-- Projects Template page --> */
+.project-page {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  min-height: 87.95vh;
+}
+
+.project-page video {
+  width: 100%;
+}
+
+.project-page img {
+  width: 100%;
+  max-width: 650px;
+}

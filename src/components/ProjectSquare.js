@@ -26,7 +26,9 @@ const ProjectSquare = ({ project }) => {
             Learn More
           </a>
         ) : (
-          <Link to={project.subpage}>Learn More</Link>
+          <Link to={`/project/${project.id}`} state={{ project }}>
+            Learn More
+          </Link>
         )}
       </div>
     </div>
