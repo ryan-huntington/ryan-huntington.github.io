@@ -32,18 +32,22 @@ function DocumentSection({ documents }) {
   return (
     <div className="document-section">
       <h2>Related Documents</h2>
-      <ul className="documents-container">
+      <ul className="document-container">
         {documents.map((doc, index) => (
-          <li key={index} className="document info">
-            <a
-              href={resolveDocumentPath(doc.url)}
-              target="_blank"
-              rel="noopener noreferrer"
-              download
-            >
-              {getFileIcon(doc.type)} {doc.name}
-            </a>
-          </li>
+          <span key={index}>
+            <li className="document-info">
+              <a
+                href={resolveDocumentPath(doc.url)}
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
+                {getFileIcon(doc.type)} {doc.name}
+              </a>
+            </li>
+            {/* Add <hr> after each document except the last one */}
+            {index < documents.length - 1 && <hr />}
+          </span>
         ))}
       </ul>
     </div>

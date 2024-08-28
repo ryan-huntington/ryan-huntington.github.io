@@ -6,19 +6,31 @@
 }
 
 .document-container {
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
   margin-top: 20px;
-  align-items: center;
+  align-items: center; */
+  text-align: left;
 }
 
 .document-info {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px;*/
   padding: 10px;
   border-radius: 10px;
+  max-width: 500px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+hr {
+  background-color: #ccc;
+  /* max-width: 650px; */
+  align-self: flex-start;
+  border: none;
+  height: 1px;
 }
 
 .document-info:hover {
