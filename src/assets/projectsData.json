@@ -79,7 +79,48 @@
     "tags": ["Python", "Java", "Jupyter Notebook", "React", "Springboot"],
     "experienceLevel": "4-6 years",
     "projectType": "Machine Learning",
-    "documents": [],
+    "documents": [
+      {
+        "type": "pdf",
+        "name": "Project Research Paper",
+        "url": "documents/ALSRS/Leopard Seal Recognition and Identification Using Machine Learning.pdf"
+      },
+      {
+        "type": "ppt",
+        "name": "Sprint 1 Presentation",
+        "url": "documents/ALSRS/Sprint 0 Demo Slides.pptx"
+      },
+      {
+        "type": "ppt",
+        "name": "Sprint 2 Presentation",
+        "url": "documents/ALSRS/Sprint 2 Presentation.pptx"
+      },
+      {
+        "type": "ppt",
+        "name": "Sprint 3 Presentation",
+        "url": "documents/ALSRS/Sprint 3 Presentation Final.pptx"
+      },
+      {
+        "type": "ppt",
+        "name": "Sprint 4 Presentation",
+        "url": "documents/ALSRS/Sprint 4 Presentation.pptx"
+      },
+      {
+        "type": "ppt",
+        "name": "Sprint 5 Presentation",
+        "url": "documents/ALSRS/Sprint 5 Presentation.pptx"
+      },
+      {
+        "type": "ppt",
+        "name": "Sprint 6 Presentation",
+        "url": "documents/ALSRS/Sprint 6 Presentation.pptx"
+      },
+      {
+        "type": "ppt",
+        "name": "Final Presentation",
+        "url": "documents/ALSRS/Final Capstone Presentation.pptx"
+      }
+    ],
     "content": [
       {
         "type": "title",

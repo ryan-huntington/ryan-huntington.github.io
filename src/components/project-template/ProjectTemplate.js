@@ -1,5 +1,6 @@
 // import "../pages/styles.css";
 import "./ProjectTemplate.css";
+import DocumentSection from "../document-section/DocumentSections";
 
 function ProjectTemplate(props) {
   const componentMap = {
@@ -51,6 +52,9 @@ function ProjectTemplate(props) {
         }
         return null; // In case of an unknown type
       })}
+      {props.data.documents && (
+        <DocumentSection documents={props.data.documents} />
+      )}
     </div>
   );
 }

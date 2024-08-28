@@ -1,0 +1,51 @@
+.document-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.document-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.document-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.document-info:hover {
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+
+.document-section h2 {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+.document-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.document-section li {
+  margin-bottom: 8px;
+}
+
+.document-section a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.document-section a:hover {
+  text-decoration: underline;
+}
