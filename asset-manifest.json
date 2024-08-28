@@ -1,15 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c77df8f.css",
-    "main.js": "/static/js/main.ed829bc8.js",
+    "main.css": "/static/css/main.b27a6276.css",
+    "main.js": "/static/js/main.cd71ebd7.js",
+    "static/media/ALSRSDemoVideo.mp4": "/static/media/ALSRSDemoVideo.334fe6e24044d2d6a282.mp4",
+    "static/media/Sprint 3 Presentation Final.pptx": "/static/media/Sprint 3 Presentation Final.34ba8922bf9375114fb9.pptx",
+    "static/media/Sprint 4 Presentation.pptx": "/static/media/Sprint 4 Presentation.98822a3792bc7ef6c83b.pptx",
+    "static/media/Leopard Seal Recognition and Identification Using Machine Learning.pdf": "/static/media/Leopard Seal Recognition and Identification Using Machine Learning.c83fcb463186b9963b75.pdf",
+    "static/media/Sprint 2 Presentation.pptx": "/static/media/Sprint 2 Presentation.f4374bb5d092f6b49ce1.pptx",
+    "static/media/Final Capstone Presentation.pptx": "/static/media/Final Capstone Presentation.d912d2cd73ee3f51f560.pptx",
+    "static/media/Sprint 0 Demo Slides.pptx": "/static/media/Sprint 0 Demo Slides.343d8f44e14bc6865b03.pptx",
+    "static/media/Sprint 5 Presentation.pptx": "/static/media/Sprint 5 Presentation.f8adb3a8f8272fd61ec4.pptx",
     "static/media/IMG_8543.jpg": "/static/media/IMG_8543.a437013aef6d1cb68e24.jpg",
+    "static/media/Sprint 6 Presentation.pptx": "/static/media/Sprint 6 Presentation.c29d0e81a551b32c77a4.pptx",
+    "static/media/non-seal-box.png": "/static/media/non-seal-box.0fa48856113a1f5e90fe.png",
     "static/media/Resume_Huntington2024.pdf": "/static/media/Resume_Huntington2024.1a851cad0e265a15396a.pdf",
+    "static/media/multi-seal-boxes.png": "/static/media/multi-seal-boxes.5859a764aa979fae085e.png",
+    "static/media/identification1.png": "/static/media/identification1.1eba5eb366ed880c1188.png",
+    "static/media/identification2.png": "/static/media/identification2.f10f81b9880a7e59ae3d.png",
     "index.html": "/index.html",
-    "main.2c77df8f.css.map": "/static/css/main.2c77df8f.css.map",
-    "main.ed829bc8.js.map": "/static/js/main.ed829bc8.js.map"
+    "main.b27a6276.css.map": "/static/css/main.b27a6276.css.map",
+    "main.cd71ebd7.js.map": "/static/js/main.cd71ebd7.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c77df8f.css",
-    "static/js/main.ed829bc8.js"
+    "static/css/main.b27a6276.css",
+    "static/js/main.cd71ebd7.js"
   ]
 }
