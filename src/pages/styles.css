@@ -2,9 +2,9 @@
 
 * {
   box-sizing: border-box;
-  /* border-color: RED;
-    border-style: solid;
-    border-width: 1px; */
+  border-color: RED;
+  border-style: solid;
+  border-width: 1px;
 }
 h1,
 h2,
@@ -320,11 +320,20 @@ body {
   min-height: 87.95vh;
 }
 
-.project-page video {
+/* Full-width for videos and headers */
+.project-page video,
+.project-page h1,
+.project-page h2,
+.project-page h3,
+.project-page h4,
+.project-page h5 {
   width: 100%;
 }
 
+/* Images and paragraphs */
 .project-page img {
-  width: 100%;
+  width: 100%; /* Full width within their grid cell */
   max-width: 650px;
+  height: auto;
+  margin: 0 auto;
 }

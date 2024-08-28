@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import ProjectTemplate from "../components/ProjectTemplate";
+import ProjectTemplate from "../components/project-template/ProjectTemplate";
 import projectData from "../assets/projectsData.json";
 function ProjectPage() {
   const { id } = useParams();
@@ -9,7 +9,11 @@ function ProjectPage() {
 
   return (
     <div className="project-page">
-      {project ? <ProjectTemplate data={project} /> : <p>Project not found.</p>}
+      {project && project.subpage ? (
+        <ProjectTemplate data={project} />
+      ) : (
+        <p>Project not found.</p>
+      )}
     </div>
   );
 }

@@ -73,12 +73,12 @@
   },
   {
     "id": 8,
+    "subpage": true,
     "name": "ALSRS",
     "description": "Advanced Leopard Seal Recognition System (ALSRS) is able to detect leopard seals and identify them from an image. ",
     "tags": ["Python", "Java", "Jupyter Notebook", "React", "Springboot"],
     "experienceLevel": "4-6 years",
     "projectType": "Machine Learning",
-    "subpage": "/alsrs",
     "documents": [],
     "content": [
       {
@@ -87,7 +87,7 @@
       },
       {
         "type": "video",
-        "src": "ALSRSDemoVideo.mp4",
+        "src": "videos/ALSRSDemoVideo.mp4",
         "controls": true
       },
       {
@@ -108,8 +108,9 @@
       },
       {
         "type": "image",
-        "src": "non-seal-box.png",
-        "alt": "Bounding box denoting the postion of leopard seal attacking sea lions and penguins. Confidence is 0.98"
+        "src": "images/non-seal-box.png",
+        "alt": "Bounding box denoting the postion of leopard seal attacking sea lions and penguins. Confidence is 0.98",
+        "caption": "Figure 1: Bounding box on Leoppard Seal surrounded by other animals"
       }
     ]
   }

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import projectsData from "../assets/projectsData.json";
 import "./styles.css";
-import ProjectSquare from "../components/ProjectSquare";
-import FilterDropdown from "../components/FilterDropdown";
+import ProjectSquare from "../components/projects/ProjectSquare";
+import FilterDropdown from "../components/projects/FilterDropdown";
 
 function Projects() {
   const [filteredProjects, setFilteredProjects] = useState(projectsData);
