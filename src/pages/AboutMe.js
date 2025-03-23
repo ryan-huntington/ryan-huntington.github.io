@@ -1,7 +1,7 @@
 import React from "react";
 import self from "../assets/images/IMG_8543.jpg";
 import "./styles.css";
-import ResumePDF from "../assets/documents/Resume_Huntington2024.pdf";
+import ResumePDF from "../assets/documents/Resume_Huntington2025.pdf";
 import { IoIosCall, IoIosMail } from "react-icons/io";
 import { FaArrowUp } from "react-icons/fa";
 
