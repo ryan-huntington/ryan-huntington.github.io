@@ -1,7 +1,7 @@
 import React from "react";
 import self from "../assets/images/IMG_8543.jpg";
 import "./styles.css";
-import ResumePDF from "../assets/documents/Resume_HuntingtonJune2025.pdf";
+import ResumePDF from "../assets/documents/Resume_HuntingtonSeptember2025.pdf";
 import { IoIosCall, IoIosMail } from "react-icons/io";
 import { FaArrowUp } from "react-icons/fa";
 
@@ -77,49 +77,74 @@ function AboutMe() {
         <div className="experience-item">
           <h3>Software Developer</h3>
           <p className="company">Paycom</p>
-          <p className="duration">July 2024 - Present</p>
+          <p className="duration">May 2023 - Present</p>
           <ul className="responsibilities">
-            <li>
-              Engaged in full-stack development on a team focused on optimizing
-              payroll software for compliance with the Affordable Care Act (ACA)
-            </li>
-            <li>
-              Developed solutions for complex business challenges, such as
-              ensuring compliance with changing tax regulations and streamlining
-              data workflows
-            </li>
-            <li>
-              Contributed to system performance improvements, reducing
-              processing times and enhancing the reliability of tax-related
-              reporting tools
-            </li>
-          </ul>
-        </div>
+            <section>
+              <h4>Engineering Impact</h4>
+              <ul>
+                <li>
+                  Led modernization of legacy payroll systems by migrating core
+                  modules to <b>React</b>, improving long-term maintainability
+                  and establishing coding best practices.
+                </li>
+                <li>
+                  Delivered <b>full-stack solutions</b> to ensure{" "}
+                  <b>Affordable Care Act (ACA)</b> compliance, improving
+                  reporting accuracy for over <b>37,500 clients</b> and reducing
+                  audit risk.
+                </li>
+                <li>
+                  Automated <b>regression testing</b> and{" "}
+                  <b>deployment pipelines</b> using <b>GitHub Actions</b>,
+                  reducing development cycle time by <b>25%</b> and increasing
+                  release reliability.
+                </li>
+                <li>
+                  Developed an internal{" "}
+                  <b>graph-generation and reporting tool</b> powered by custom{" "}
+                  <b>SQL queries</b> across a{" "}
+                  <b>10M+ row production database</b>, enabling faster insights
+                  and data-driven decision-making.
+                </li>
+              </ul>
+            </section>
 
-        <div className="experience-item">
-          <h3>Software Development Intern</h3>
-          <p className="company">Paycom</p>
-          <p className="duration">May 2023 - August 2023</p>
-          <ul className="responsibilities">
-            <li>
-              Contributed as a full-stack engineer, playing a pivotal role in
-              both front-end and back-end development projects
-            </li>
-            <li>
-              Led the development of a graph-generating application, focusing on
-              backend functionality and database management to support data
-              visualization needs
-            </li>
-            <li>
-              Optimized SQL queries across multiple tables with 10 million
-              entries, reducing query execution time from over a minute to under
-              a second
-            </li>
-            <li>
-              Collaborated cross-functionally with UI/UX teams to integrate
-              front-end design elements seamlessly with backend functionality,
-              ensuring a cohesive and intuitive user experience
-            </li>
+            <section>
+              <h4>System Modernization</h4>
+              <ul>
+                <li>
+                  Refactored high-impact legacy modules to mitigate{" "}
+                  <b>technical debt</b>, strengthen system resilience, and
+                  enhance long-term scalability.
+                </li>
+                <li>
+                  Championed the transition from a <b>monolithic repository</b>{" "}
+                  to modular services, adopting new <b>API languages</b> and
+                  guiding teammates through modern workflows.
+                </li>
+                <li>
+                  Contributed to <b>internationalization efforts</b> by
+                  enhancing modularity and preparing systems for broader market
+                  adoption.
+                </li>
+              </ul>
+            </section>
+
+            <section>
+              <h4>Leadership & Mentorship</h4>
+              <ul>
+                <li>
+                  Partnered with <b>product managers</b> and <b>QA teams</b> to
+                  align technical implementation with user experience, ensuring
+                  scalable and customer-focused feature delivery.
+                </li>
+                <li>
+                  Mentored and onboarded new developers, serving as a{" "}
+                  <b>point of contact</b> for issue resolution, leading{" "}
+                  <b>shadowing sessions</b>, and accelerating team readiness.
+                </li>
+              </ul>
+            </section>
           </ul>
         </div>
 
@@ -128,22 +153,29 @@ function AboutMe() {
           <p className="company">The CBORD Group</p>
           <p className="duration">April 2022 - May 2023</p>
           <ul className="responsibilities">
-            <li>
-              Resolved an average of 10 known issues per week within the main
-              software, demonstrating strong troubleshooting skills and
-              contributing to enhanced software reliability
-            </li>
-            <li>
-              Collaborated with senior employees to design, develop, and
-              implement both frontend and backend features, ensuring the
-              delivery of functional and user-friendly software tailored to the
-              needs of over 500 institutions
-            </li>
-            <li>
-              Contributed to the adoption of agile methodologies within internal
-              teams, fostering a more scalable approach to software development
-              and improving efficiency in project delivery
-            </li>
+            <section>
+              <ul>
+                <li>
+                  Resolved an average of <b>10 known issues per week</b> within
+                  the main software, demonstrating strong{" "}
+                  <b>troubleshooting skills</b> and contributing to{" "}
+                  <b>enhanced software reliability</b>.
+                </li>
+                <li>
+                  Collaborated with <b>senior employees</b> to design, develop,
+                  and implement both <b>frontend and backend features</b>,
+                  ensuring the delivery of{" "}
+                  <b>functional and user-friendly software</b> tailored to the
+                  needs of over <b>500 institutions</b>.
+                </li>
+                <li>
+                  Contributed to the adoption of <b>agile methodologies</b>{" "}
+                  within internal teams, fostering a more{" "}
+                  <b>scalable approach</b> to software development and improving{" "}
+                  <b>efficiency in project delivery</b>.
+                </li>
+              </ul>
+            </section>
           </ul>
         </div>
         <div className="experience-item">
@@ -151,25 +183,35 @@ function AboutMe() {
           <p className="company">Mathnasium</p>
           <p className="duration">May 2021 - December 2021</p>
           <ul className="responsibilities">
-            <li>
-              Developed and honed strong communication skills while instructing
-              and mentoring over 50 students aged kindergarten to 8th grade in
-              foundational mathematical concepts
-            </li>
-            <li>
-              Mentored students in basic coding concepts using various
-              programming languages, including Minecraft, Roblox, and Python, to
-              foster computational thinking and problem-solving abilities
-            </li>
-            <li>
-              Facilitated interactive learning experiences in robotics using
-              Lego Mindstorms, guiding students in hands-on projects to apply
-              mathematical and engineering principles
-            </li>
-            <li>
-              Led a camp focusing on mathematics, coding, and robotics,
-              providing a dynamic and engaging learning environment for students
-            </li>
+            <section>
+              <ul>
+                <li>
+                  Developed and honed strong <b>communication skills</b> while
+                  instructing and mentoring over <b>50 students</b> aged
+                  kindergarten to 8th grade in foundational{" "}
+                  <b>mathematical concepts</b>.
+                </li>
+                <li>
+                  Mentored students in <b>basic coding concepts</b> using
+                  various programming languages, including{" "}
+                  <b>Minecraft, Roblox, and Python</b>, to foster{" "}
+                  <b>computational thinking</b>
+                  and <b>problem-solving abilities</b>.
+                </li>
+                <li>
+                  Facilitated interactive learning experiences in{" "}
+                  <b>robotics</b> using <b>Lego Mindstorms</b>, guiding students
+                  in hands-on projects to apply{" "}
+                  <b>mathematical and engineering principles</b>.
+                </li>
+                <li>
+                  Led a camp focusing on{" "}
+                  <b>mathematics, coding, and robotics</b>, providing a dynamic
+                  and
+                  <b>engaging learning environment</b> for students.
+                </li>
+              </ul>
+            </section>
           </ul>
         </div>
 
@@ -183,15 +225,6 @@ function AboutMe() {
           <span className="arrow">{<FaArrowUp className="arrow" />}</span>
         </a>
       </div>
-      {/* <div className='work-experience'>
-        <h2>Education</h2>
-        <div className='experience-item'>
-          <h3>Baylor University</h3>
-          <p className='company'>Bachelors of Science in Computer Science</p>
-          <p className='duration'>August 2020 - May 2024</p>
-
-        </div>
-      </div> */}
     </div>
   );
 }
