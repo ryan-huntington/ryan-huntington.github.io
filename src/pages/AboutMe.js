@@ -238,7 +238,7 @@ function AboutMe() {
         </div>
 
         <a
-          href="/assets/documents/Resume_HuntingtonSeptember2025.pdf"
+          href="/assets/documents/Resume_HuntingtonApril2026.pdf"
           target="_blank"
           rel="noreferrer"
           className="view-resume-link"
