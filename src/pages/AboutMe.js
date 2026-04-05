@@ -1,7 +1,5 @@
 import React from "react";
-import self from "../assets/images/IMG_8543.jpg";
 import "./styles.css";
-import ResumePDF from "../assets/documents/Resume_HuntingtonSeptember2025.pdf";
 import { IoIosCall, IoIosMail } from "react-icons/io";
 import { FaArrowUp } from "react-icons/fa";
 
@@ -49,7 +47,10 @@ function AboutMe() {
           </p>
         </div>
         <div className="portrait">
-          <img src={self} alt="Self portrait of Ryan Huntington" />
+          <img
+            src="assets/images/IMG_8543.jpg"
+            alt="Self portrait of Ryan Huntington"
+          />
         </div>
       </div>
 
@@ -83,21 +84,29 @@ function AboutMe() {
               <h4>Engineering Impact</h4>
               <ul>
                 <li>
-                  Led modernization of legacy payroll systems by migrating core
-                  modules to <b>React</b>, improving long-term maintainability
-                  and establishing coding best practices.
+                  <b>Sole owner </b> and <b>technical lead</b> for a
+                  next-generation SPA, driving architecture, development, and
+                  deployment in a lean, post-restructuring environment
                 </li>
                 <li>
-                  Delivered <b>full-stack solutions</b> to ensure{" "}
-                  <b>Affordable Care Act (ACA)</b> compliance, improving
-                  reporting accuracy for over <b>37,500 clients</b> and reducing
-                  audit risk.
+                  Delivered <b>full-stack solutions</b> supporting{" "}
+                  <b>ACA compliance</b>, improving reporting accuracy for{" "}
+                  <b>37,500+ clients</b> and reducing audit risk
                 </li>
                 <li>
-                  Automated <b>regression testing</b> and{" "}
-                  <b>deployment pipelines</b> using <b>GitHub Actions</b>,
-                  reducing development cycle time by <b>25%</b> and increasing
-                  release reliability.
+                  Designed and implemented a scalable <b>React</b> application
+                  using strict, reliability-focused patterns to eliminate
+                  recurring issues from legacy systems
+                </li>
+                <li>
+                  Built and maintained <b>CI/CD pipelines</b> using GitHub
+                  Actions, reducing development cycle time by <b>25%</b> and
+                  increasing release reliability
+                </li>
+                <li>
+                  <b>Automated</b> complex internal workflows, between client
+                  and internal systems, reducing manual processing and improving
+                  operational efficiency
                 </li>
                 <li>
                   Developed an internal{" "}
@@ -113,6 +122,11 @@ function AboutMe() {
               <h4>System Modernization</h4>
               <ul>
                 <li>
+                  Led modernization of legacy payroll systems by migrating core
+                  modules to <b>React</b>, improving long-term maintainability
+                  and establishing coding best practices.
+                </li>
+                <li>
                   Refactored high-impact legacy modules to mitigate{" "}
                   <b>technical debt</b>, strengthen system resilience, and
                   enhance long-term scalability.
@@ -123,9 +137,9 @@ function AboutMe() {
                   guiding teammates through modern workflows.
                 </li>
                 <li>
-                  Contributed to <b>internationalization efforts</b> by
-                  enhancing modularity and preparing systems for broader market
-                  adoption.
+                  Define engineering standards, including{" "}
+                  <b>comprehensive test coverage</b> and more reliable system
+                  design patterns
                 </li>
               </ul>
             </section>
@@ -134,14 +148,22 @@ function AboutMe() {
               <h4>Leadership & Mentorship</h4>
               <ul>
                 <li>
-                  Partnered with <b>product managers</b> and <b>QA teams</b> to
-                  align technical implementation with user experience, ensuring
-                  scalable and customer-focused feature delivery.
+                  Acted as <b>primary technical resource</b> and{" "}
+                  <b>subject-matter expert</b> for internal systems and
+                  frameworks
                 </li>
                 <li>
-                  Mentored and onboarded new developers, serving as a{" "}
-                  <b>point of contact</b> for issue resolution, leading{" "}
-                  <b>shadowing sessions</b>, and accelerating team readiness.
+                  Took on <b>product</b> and <b>QA responsibilities</b>,
+                  defining requirements and ensuring <b>production quality</b>{" "}
+                  after team restructuring
+                </li>
+                <li>
+                  <b>Mentored and onboarded</b> new developers, serving as a key
+                  point of contact for technical guidance
+                </li>
+                <li>
+                  <b>Drove technical decision-making</b> independently,
+                  balancing immediate business needs with long-term scalability
                 </li>
               </ul>
             </section>
@@ -149,7 +171,7 @@ function AboutMe() {
         </div>
 
         <div className="experience-item">
-          <h3>Software Development Intern</h3>
+          <h3>Associate Software Engineer</h3>
           <p className="company">The CBORD Group</p>
           <p className="duration">April 2022 - May 2023</p>
           <ul className="responsibilities">
@@ -216,7 +238,7 @@ function AboutMe() {
         </div>
 
         <a
-          href={ResumePDF}
+          href="/assets/documents/Resume_HuntingtonApril2026.pdf"
           target="_blank"
           rel="noreferrer"
           className="view-resume-link"

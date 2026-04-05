@@ -5,27 +5,27 @@ import { SiMicrosoftpowerpoint, SiMicrosoftword } from "react-icons/si";
 import { LuFileCode2, LuFile } from "react-icons/lu";
 
 function resolveDocumentPath(fileName) {
-  return require(`../../assets/${fileName}`);
+  return `/assets/documents/${fileName}`;
 }
 
 function DocumentSection({ documents }) {
   console.log(documents);
   if (!documents || documents.length === 0) {
-    return null; // Return nothing if no documents are provided
+    return null;
   }
 
   const getFileIcon = (type) => {
     switch (type) {
       case "pdf":
-        return <FaRegFilePdf />; // Example: PDF icon (you can replace with an actual icon or image)
+        return <FaRegFilePdf />;
       case "ppt":
-        return <SiMicrosoftpowerpoint />; // Example: PowerPoint icon
+        return <SiMicrosoftpowerpoint />;
       case "doc":
-        return <SiMicrosoftword />; // Example: Word document icon
+        return <SiMicrosoftword />;
       case "code":
         return <LuFileCode2 />;
       default:
-        return <LuFile />; // Generic file icon
+        return <LuFile />;
     }
   };
 
@@ -45,7 +45,6 @@ function DocumentSection({ documents }) {
                 {getFileIcon(doc.type)} {doc.name}
               </a>
             </li>
-            {/* Add <hr> after each document except the last one */}
             {index < documents.length - 1 && <hr />}
           </span>
         ))}
