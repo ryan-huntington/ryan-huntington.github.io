@@ -83,42 +83,42 @@
       {
         "type": "pdf",
         "name": "Project Research Paper",
-        "url": "documents/ALSRS/Leopard Seal Recognition and Identification Using Machine Learning.pdf"
+        "url": "ALSRS/Leopard Seal Recognition and Identification Using Machine Learning.pdf"
       },
       {
         "type": "ppt",
         "name": "Sprint 1 Presentation",
-        "url": "documents/ALSRS/Sprint 0 Demo Slides.pptx"
+        "url": "ALSRS/Sprint 0 Demo Slides.pptx"
       },
       {
         "type": "ppt",
         "name": "Sprint 2 Presentation",
-        "url": "documents/ALSRS/Sprint 2 Presentation.pptx"
+        "url": "ALSRS/Sprint 2 Presentation.pptx"
       },
       {
         "type": "ppt",
         "name": "Sprint 3 Presentation",
-        "url": "documents/ALSRS/Sprint 3 Presentation Final.pptx"
+        "url": "ALSRS/Sprint 3 Presentation Final.pptx"
       },
       {
         "type": "ppt",
         "name": "Sprint 4 Presentation",
-        "url": "documents/ALSRS/Sprint 4 Presentation.pptx"
+        "url": "ALSRS/Sprint 4 Presentation.pptx"
       },
       {
         "type": "ppt",
         "name": "Sprint 5 Presentation",
-        "url": "documents/ALSRS/Sprint 5 Presentation.pptx"
+        "url": "ALSRS/Sprint 5 Presentation.pptx"
       },
       {
         "type": "ppt",
         "name": "Sprint 6 Presentation",
-        "url": "documents/ALSRS/Sprint 6 Presentation.pptx"
+        "url": "ALSRS/Sprint 6 Presentation.pptx"
       },
       {
         "type": "ppt",
         "name": "Final Presentation",
-        "url": "documents/ALSRS/Final Capstone Presentation.pptx"
+        "url": "ALSRS/Final Capstone Presentation.pptx"
       }
     ],
     "content": [
@@ -128,7 +128,7 @@
       },
       {
         "type": "video",
-        "src": "videos/ALSRSDemoVideo.mp4",
+        "src": "ALSRSDemoVideo.mp4",
         "controls": true
       },
       {
@@ -149,7 +149,7 @@
       },
       {
         "type": "image",
-        "src": "images/non-seal-box.png",
+        "src": "non-seal-box.png",
         "alt": "Bounding box denoting the postion of leopard seal attacking sea lions and penguins. Confidence is 0.98",
         "caption": "Figure 1: Bounding box on Leoppard Seal surrounded by other animals"
       }

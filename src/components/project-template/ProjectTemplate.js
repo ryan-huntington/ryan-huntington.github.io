@@ -9,7 +9,7 @@ function ProjectTemplate(props) {
     paragraph: (props) => <p>{props.content}</p>,
     image: (props) => {
       // Dynamically require the image based on the src value
-      const imageSrc = require(`../../assets/${props.src}`);
+      const imageSrc = `/assets/images/${props.src}`;
       return (
         <div className="image-container">
           <img src={imageSrc} alt={props.alt} className="image" />
@@ -18,7 +18,7 @@ function ProjectTemplate(props) {
       );
     },
     video: (props) => {
-      const videoSrc = require(`../../assets/${props.src}`);
+      const videoSrc = `/assets/videos/${props.src}`;
       return (
         <video controls={props.controls}>
           <source src={videoSrc} type="video/mp4" />
