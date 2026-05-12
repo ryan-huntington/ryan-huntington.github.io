@@ -63,8 +63,8 @@ function Home() {
           <h1>Welcome</h1>
           <p>
             My name is Ryan Huntington. I'm a software engineer with skills in
-            building applications and deep learning. Currently, I'm working as a
-            Software Developer at Paycom.
+            building applications and deep learning. Currently, I'm seeking new
+            opportunites as a Software Developer
           </p>
         </div>
         <div className="projects-button">

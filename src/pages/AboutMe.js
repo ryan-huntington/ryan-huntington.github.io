@@ -78,7 +78,7 @@ function AboutMe() {
         <div className="experience-item">
           <h3>Software Developer</h3>
           <p className="company">Paycom</p>
-          <p className="duration">May 2023 - Present</p>
+          <p className="duration">May 2023 - May 2026</p>
           <ul className="responsibilities">
             <section>
               <h4>Engineering Impact</h4>

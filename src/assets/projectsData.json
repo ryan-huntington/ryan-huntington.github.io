@@ -154,5 +154,14 @@
         "caption": "Figure 1: Bounding box on Leoppard Seal surrounded by other animals"
       }
     ]
+  },
+  {
+    "id": 9,
+    "name": "Entity Based Game Prototype",
+    "description": "Custom Entity Manager focused on handling game objects, collision detection, movement, and basic configuration-driven gameplay",
+    "tags": ["C++", "SFML"],
+    "experienceLevel": "4-6 years",
+    "projectType": "Game Development",
+    "link": "https://github.com/ryan-huntington/Entity-Based-Game-Prototype"
   }
 ]
