@@ -27,20 +27,32 @@ function ProjectTemplate(props) {
     },
     youtube: (props) => {
       return (
-        <iframe
-          width="560"
-          height="315"
-          src={props.src}
-          title={props.title}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+        <div className="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src={props.src}
+            title={props.title}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
       );
     },
-    // "type": "youtube",
-    // "src": "https://example.com/video.mp4",
-    // "controls": true
+    game: (props) => {
+      return (
+        <iframe
+          title={props.title}
+          frameborder="0"
+          src={props.src}
+          width="552"
+          height="167"
+        >
+          <a href={props.href}>{props.title} by ryanhuntington</a>
+        </iframe>
+      );
+    },
   };
 
   return (

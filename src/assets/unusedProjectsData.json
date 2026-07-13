@@ -1,0 +1,20 @@
+[
+  {
+    "id": 6,
+    "name": "Portfolio Website",
+    "description": "A personal portfolio website showcasing my projects and skills.",
+    "tags": ["React", "JavaScript", "HTML", "CSS"],
+    "experienceLevel": "4-6 years",
+    "projectType": "Software Engineering",
+    "link": "https://github.com/ryan-huntington/ryan-huntington.github.io"
+  },
+  {
+    "id": 7,
+    "name": "Baseball Queries",
+    "description": "Custom webpage to streamline complicated queries on a baseball database containing player stats, team metrics, and historical data",
+    "tags": ["Python", "SQL", "MariaDB", "Flask", "HTML", "CSS"],
+    "experienceLevel": "1-3 years",
+    "projectType": "Software Engineering",
+    "link": "https://github.com/ryan-huntington/BaseballQueries"
+  }
+]

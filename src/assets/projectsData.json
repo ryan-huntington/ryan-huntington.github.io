@@ -54,24 +54,6 @@
     "link": "https://github.com/ryan-huntington/JackUDP"
   },
   {
-    "id": 6,
-    "name": "Portfolio Website",
-    "description": "A personal portfolio website showcasing my projects and skills.",
-    "tags": ["React", "JavaScript", "HTML", "CSS"],
-    "experienceLevel": "4-6 years",
-    "projectType": "Software Engineering",
-    "link": "https://github.com/ryan-huntington/ryan-huntington.github.io"
-  },
-  {
-    "id": 7,
-    "name": "Baseball Queries",
-    "description": "Custom webpage to streamline complicated queries on a baseball database containing player stats, team metrics, and historical data",
-    "tags": ["Python", "SQL", "MariaDB", "Flask", "HTML", "CSS"],
-    "experienceLevel": "1-3 years",
-    "projectType": "Software Engineering",
-    "link": "https://github.com/ryan-huntington/BaseballQueries"
-  },
-  {
     "id": 8,
     "subpage": true,
     "name": "ALSRS",
@@ -163,5 +145,141 @@
     "experienceLevel": "4-6 years",
     "projectType": "Game Development",
     "link": "https://github.com/ryan-huntington/Entity-Based-Game-Prototype"
+  },
+  {
+    "id": 10,
+    "subpage": true,
+    "name": "Pirate Adventure",
+    "description": "Sail through three island-filled levels as a pirate ship, blasting enemy lighthouses, collecting coins, and surviving incoming cannon fire to reach the next challenge",
+    "tags": ["C++", "Unreal"],
+    "experienceLevel": "1-3 years",
+    "projectType": "Game Development",
+    "content": [
+      {
+        "type": "title",
+        "content": "Pirate Adventure"
+      },
+      {
+        "type": "youtube",
+        "src": "https://youtube.com/embed/-KS969gKGhc",
+        "controls": true
+      },
+      {
+        "type": "header",
+        "content": "Project Overview"
+      },
+      {
+        "type": "paragraph",
+        "content": "A small Unreal Engine 5 project built entirely in C++ that challenged me to design reusable gameplay systems rather than simply implement individual features. Players control a pirate ship, destroy hostile lighthouses, collect coins to unlock the next level, and survive enemy cannon fire across three handcrafted levels."
+      },
+      {
+        "type": "paragraph",
+        "content": "This was the first game I designed and completed entirely on my own. After working through several Unreal Engine courses, I wanted to step away from tutorials and build something from scratch that would force me to solve my own problems and make my own design decisions."
+      },
+      {
+        "type": "paragraph",
+        "content": "The gameplay is intentionally simple: navigate around islands, destroy enemy lighthouses, collect every coin in the level, and progress through three increasingly challenging stages. While the mechanics are straightforward, the project gave me valuable experience designing gameplay systems, structuring C++ classes, and learning Unreal Engine's workflow."
+      },
+      {
+        "type": "header",
+        "content": "Gameplay"
+      },
+      {
+        "type": "image",
+        "src": "PirateAdventure2.png",
+        "alt": "Pirate shipping firing cannonball towards enemy lighthouse, while collecting a coin",
+        "caption": "Figure 1: The pirate ship fires a cannonball toward an enemy lighthouse while collecting coins needed to unlock the next level."
+      },
+      {
+        "type": "paragraph",
+        "content": "Players steer the ship using Unreal Engine's Enhanced Input System while aiming and firing cannons with the mouse. Enemy lighthouses automatically rotate to track the player once they enter range and fire cannonballs on a timed interval, creating a simple combat encounter that encourages movement rather than staying stationary."
+      },
+      {
+        "type": "paragraph",
+        "content": "Collecting every coin in a level unlocks progression to the next stage, giving players both combat and exploration objectives."
+      },
+      {
+        "type": "header",
+        "content": "Building Reusable Gameplay Systems"
+      },
+      {
+        "type": "paragraph",
+        "content": "Rather than implementing every actor independently, I focused on writing code that could easily support future expansion."
+      },
+      {
+        "type": "paragraph",
+        "content": "Both the player ship and enemy lighthouses inherit from a shared parent class because they share much of the same functionality. Each can fire projectiles, rotate cannons, play particle and sound effects when destroyed, and respond to damage. The player class then extends this shared behavior with keyboard and mouse input through Unreal's Enhanced Input System."
+      },
+      {
+        "type": "paragraph",
+        "content": "One of my favorite parts of this project was learning how Unreal's component system encourages composition over inheritance. Instead of embedding health logic directly into each actor, I created a reusable HealthComponent that manages damage and destruction. Any future actor that needs health can simply attach the component without inheriting from a specific base class."
+      },
+      {
+        "type": "paragraph",
+        "content": "I followed a similar approach for collectibles. Although the game currently only contains coins, the collectible system was designed to support additional item types with minimal changes. For example, adding a health pickup or another collectible objective would primarily involve extending the existing collectible behavior rather than creating an entirely separate system."
+      },
+      {
+        "type": "header",
+        "content": "Environment and World Building"
+      },
+      {
+        "type": "image",
+        "src": "PirateAdventure1.png",
+        "alt": "Picture featuring the playable level, showcasing the water, level design, landscape, and foliage",
+        "caption": "Figure 2: One of the playable levels showcasing the landscape, water, foliage, and exploration areas."
+      },
+      {
+        "type": "paragraph",
+        "content": "This project also introduced me to several Unreal Engine world-building tools, including the Landscape, Foliage, and Water systems."
+      },
+      {
+        "type": "paragraph",
+        "content": "Rather than relying on Unreal's experimental Water plugin, I chose to create a simpler custom water material stretched across the landscape. The ship ignores water collision and glides across the surface, allowing me to focus on gameplay systems before tackling more advanced topics like buoyancy and water physics."
+      },
+      {
+        "type": "paragraph",
+        "content": "Learning the Landscape tools was one of the biggest challenges of the project. Sculpting believable terrain and painting landscape materials required a significant amount of experimentation, but it gave me a much better understanding of how environments are constructed inside Unreal Engine."
+      },
+      {
+        "type": "header",
+        "content": "Visual Feedback"
+      },
+      {
+        "type": "image",
+        "src": "PirateAdventure3.png",
+        "alt": "Player ship is destoryed, showing a cloud of orange smoke in its place as the text \"You Lose.\" appears over the screen.",
+        "caption": "Figure 3: The player's ship is destroyed, spawning particle effects before displaying the game over screen."
+      },
+      {
+        "type": "paragraph",
+        "content": "I wanted every interaction to provide clear visual feedback. Projectiles spawn impact effects, destroyed actors trigger particle systems and sound effects, and the player receives immediate feedback when their ship is destroyed through a game over screen accompanied by explosion effects."
+      },
+      {
+        "type": "paragraph",
+        "content": "Although the presentation is simple, implementing these systems helped me better understand Unreal's gameplay framework and event-driven architecture."
+      },
+      {
+        "type": "header",
+        "content": "What I Learned"
+      },
+      {
+        "type": "paragraph",
+        "content": "This project taught me much more than how to build a small game. It reinforced software engineering principles that transfer directly to larger projects, such as designing resusable C++ classes through inheritance, utilizing the Unreal Engine's component system to reduce coupling, and creating gameplay systems that can support future features with minimal changes. I was also able to experiment with building AI behavior using detection ranges, target tracking, timers, and projectile systems, as well as working with Unreal's landscape, foliage, materials, particle systems, and Enhanced Input framework. Lastly, I was able to take a project from an empty Unreal level to a fully playable game with multiple levels and progression."
+      },
+      {
+        "type": "paragraph",
+        "content": "Looking back, there are many areas I would improve. From movement and aiming to enemy behavior and water physics, but completing a full game independently was an important milestone. More importantly, it gave me confidence that I can take an idea from concept to a finished, playable experience while writing code that is organized, reusable, and designed with future expansion in mind."
+      },
+      {
+        "type": "header",
+        "content": "Game Download"
+      },
+      {
+        "type": "game",
+        "src": "https://itch.io/embed/4733182",
+        "title": "Pirate Adventure",
+        "href": "https://ryanhuntington.itch.io/pirate-adventure"
+      }
+    ]
   }
 ]
