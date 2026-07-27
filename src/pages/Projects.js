@@ -73,6 +73,11 @@ function Projects() {
   return (
     <div className="page">
       <h1>Projects</h1>
+      <p className="page-intro">
+        A selection of things I've built — spanning software engineering, machine
+        learning, networking, and game development. Filter by language, experience,
+        or type.
+      </p>
       <div className="filter-container">
         <FilterDropdown
           options={tags}

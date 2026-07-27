@@ -8,8 +8,14 @@ function resolveDocumentPath(fileName) {
   return `/assets/documents/${fileName}`;
 }
 
+const TYPE_LABELS = {
+  pdf: "PDF",
+  ppt: "Slides",
+  doc: "Document",
+  code: "Code",
+};
+
 function DocumentSection({ documents }) {
-  console.log(documents);
   if (!documents || documents.length === 0) {
     return null;
   }
@@ -31,22 +37,26 @@ function DocumentSection({ documents }) {
 
   return (
     <div className="document-section">
-      <h2>Related Documents</h2>
-      <ul className="document-container">
+      <h2>Related documents</h2>
+      <ul className="document-grid">
         {documents.map((doc, index) => (
-          <span key={index}>
-            <li className="document-info">
-              <a
-                href={resolveDocumentPath(doc.url)}
-                target="_blank"
-                rel="noopener noreferrer"
-                download
-              >
-                {getFileIcon(doc.type)} {doc.name}
-              </a>
-            </li>
-            {index < documents.length - 1 && <hr />}
-          </span>
+          <li key={index}>
+            <a
+              className={`document-tile document-tile--${doc.type}`}
+              href={resolveDocumentPath(doc.url)}
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
+              <span className="document-tile-icon">{getFileIcon(doc.type)}</span>
+              <span className="document-tile-text">
+                <span className="document-tile-name">{doc.name}</span>
+                <span className="document-tile-type">
+                  {TYPE_LABELS[doc.type] || "File"}
+                </span>
+              </span>
+            </a>
+          </li>
         ))}
       </ul>
     </div>

@@ -1,63 +1,78 @@
 .document-section {
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-}
-
-.document-container {
-  /* display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  align-items: center; */
-  text-align: left;
-}
-
-.document-info {
-  display: flex;
-  align-items: center;
-  /* margin-bottom: 10px;*/
-  padding: 10px;
-  border-radius: 10px;
-  max-width: 500px;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-hr {
-  background-color: #ccc;
-  /* max-width: 650px; */
-  align-self: flex-start;
-  border: none;
-  height: 1px;
-}
-
-.document-info:hover {
-  background-color: #f3f3f3;
-  cursor: pointer;
+  margin-top: var(--space-5);
+  padding: var(--space-4);
+  background-color: var(--surface-alt);
+  border-radius: var(--radius);
 }
 
 .document-section h2 {
-  margin-bottom: 16px;
+  margin: 0 0 var(--space-3);
   font-size: 1.5rem;
 }
 
-.document-section ul {
-  list-style-type: none;
+.document-grid {
+  list-style: none;
   padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
 }
 
-.document-section li {
-  margin-bottom: 8px;
-}
-
-.document-section a {
+.document-tile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
   text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    border-color 0.15s ease;
 }
 
-.document-section a:hover {
-  text-decoration: underline;
+.document-tile:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: rgba(67, 47, 191, 0.35);
+}
+
+.document-tile-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  font-size: 1.7rem;
+  color: var(--accent);
+}
+
+.document-tile--pdf .document-tile-icon {
+  color: #d0342c;
+}
+
+.document-tile--ppt .document-tile-icon {
+  color: #d24625;
+}
+
+.document-tile-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.document-tile-name {
+  font-family: var(--font-body);
+  font-weight: 700;
+  color: var(--text-body);
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+.document-tile-type {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }

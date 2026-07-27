@@ -75,7 +75,9 @@ function Navbar(props) {
         </ul>
       </nav>
       {showMenu ? (
-        <div className="sidebar-menu">
+        <>
+          <div className="overlay" onClick={toggleMenu}></div>
+          <div className="sidebar-menu">
           <button className="nav-btn" onClick={toggleMenu}>
             <FaTimes />
           </button>
@@ -128,8 +130,8 @@ function Navbar(props) {
               </a>
             </li>
           </ul>
-          {showMenu && <div className="overlay" onClick={toggleMenu}></div>}
-        </div>
+          </div>
+        </>
       ) : (
         <button className="nav-btn" onClick={toggleMenu}>
           <FaBars />

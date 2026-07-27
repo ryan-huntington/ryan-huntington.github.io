@@ -15,7 +15,7 @@ body {
 }
 
 .navbar {
-  background-color: #432fbf;
+  background-color: var(--accent, #432fbf);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -23,8 +23,6 @@ body {
 
   padding: 0 2rem;
   height: 4.5rem;
-  /* border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px; */
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
   position: relative;
 }
@@ -79,38 +77,33 @@ body {
 }
 
 .navbar a {
-  color: inherit;
   text-decoration: none;
-  color: #999;
+  color: rgba(255, 255, 255, 0.82);
   padding: 10px 15px;
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
   z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s;
 }
 
+.navbar a:hover {
+  color: #fff;
+}
+
+/* Icon + label are always visible now; only the active item gets the highlighter */
 .navbar .nav-item .fas,
 .navbar .nav-item .icon {
-  transform: translateX(15px);
-  margin-right: 10px;
-  transition: transform 0.25s;
-}
-
-.navbar .nav-item.active .fas,
-.navbar .nav-item.active .icon {
-  margin-right: 10px;
-  transform: translateX(0px);
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .navbar .nav-item .nav-item-text {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.25s;
-}
-
-.navbar .nav-item.active .nav-item-text {
-  visibility: visible;
   opacity: 1;
+  visibility: visible;
 }
 
 .nav-btn {
@@ -173,7 +166,7 @@ a.social:hover {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1 !important;
+    z-index: 2 !important;
     display: block;
   }
 

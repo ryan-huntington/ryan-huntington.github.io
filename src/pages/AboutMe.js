@@ -230,7 +230,7 @@ function AboutMe() {
                   Led a camp focusing on{" "}
                   <b>mathematics, coding, and robotics</b>, providing a dynamic
                   and
-                  <b>engaging learning environment</b> for students.
+                  <b> engaging learning environment</b> for students.
                 </li>
               </ul>
             </section>
@@ -243,7 +243,7 @@ function AboutMe() {
           rel="noreferrer"
           className="view-resume-link"
         >
-          View Full Resume{" "}
+          View Resume{" "}
           <span className="arrow">{<FaArrowUp className="arrow" />}</span>
         </a>
       </div>

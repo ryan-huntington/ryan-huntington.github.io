@@ -58,17 +58,18 @@ function Home() {
           </path>
         </g>
       </svg>
-      <div className="page">
+      <div className="page welcome-page">
         <div className="welcome-text">
-          <h1>Welcome</h1>
+          <p className="welcome-eyebrow">Hello, I'm</p>
+          <h1>Ryan Huntington</h1>
+          <p className="welcome-role">Software Engineer</p>
           <p>
-            My name is Ryan Huntington. I'm a software engineer with skills in
-            building applications and deep learning. Currently, I'm seeking new
-            opportunites as a Software Developer
+            I build applications and work in game development. Currently, I'm
+            working as a Software Engineer at Pariveda Solutions.
           </p>
-        </div>
-        <div className="projects-button">
-          <Link to="/projects">Explore my Projects!</Link>
+          <div className="projects-button">
+            <Link to="/projects">Explore my projects</Link>
+          </div>
         </div>
       </div>
     </div>
