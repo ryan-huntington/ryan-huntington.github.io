@@ -7,26 +7,37 @@ const ProjectSquare = ({ project }) => {
     <div className="project-square">
       <div className="content">
         <h3>{project.name}</h3>
-        <p>{project.description}</p>
-        <p>
-          <b>Languages: </b>
-          {project.tags.join(", ")}
-        </p>
-        <p>
-          <b>Experience Level: </b>
-          {project.experienceLevel}
-        </p>
-        <p>
-          <b>Project Type: </b>
-          {project.projectType}
-        </p>
+        <p className="project-description">{project.description}</p>
+        <div className="project-meta">
+          <p>
+            <b>Languages: </b>
+            {project.tags.join(", ")}
+          </p>
+          <p>
+            <b>Experience Level: </b>
+            {project.experienceLevel}
+          </p>
+          <p>
+            <b>Project Type: </b>
+            {project.projectType}
+          </p>
+        </div>
 
         {project.link ? (
-          <a href={project.link} target="_blank" rel="noreferrer">
+          <a
+            className="project-link"
+            href={project.link}
+            target="_blank"
+            rel="noreferrer"
+          >
             Learn More
           </a>
         ) : (
-          <Link to={`/project/${project.id}`} state={{ project }}>
+          <Link
+            className="project-link"
+            to={`/project/${project.id}`}
+            state={{ project }}
+          >
             Learn More
           </Link>
         )}
