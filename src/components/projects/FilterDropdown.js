@@ -12,7 +12,7 @@ const FilterDropdown = ({
     setSelectedValues(selectedOptions.map((option) => option.value));
   };
 
-  const sortedOptions = options.sort((a, b) => a.localeCompare(b));
+  const sortedOptions = [...options].sort((a, b) => a.localeCompare(b));
 
   const selectedOptions = selectedValues.map((value) => ({
     value,

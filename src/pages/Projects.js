@@ -5,7 +5,9 @@ import ProjectSquare from "../components/projects/ProjectSquare";
 import FilterDropdown from "../components/projects/FilterDropdown";
 
 function Projects() {
-  const [filteredProjects, setFilteredProjects] = useState(projectsData);
+  const [filteredProjects, setFilteredProjects] = useState(() =>
+    [...projectsData].sort((a, b) => a.name.localeCompare(b.name))
+  );
   const [selectedTags, setSelectedTags] = useState([]);
   const [selectedExperienceLevels, setSelectedExperienceLevels] = useState([]);
   const [selectedProjectTypes, setSelectedProjectTypes] = useState([]);
@@ -31,7 +33,7 @@ function Projects() {
 
   useEffect(() => {
     const filterProjects = () => {
-      let filtered = projectsData;
+      let filtered = [...projectsData];
 
       if (selectedTags.length > 0) {
         filtered = filtered.filter((project) =>
