@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import projectsData from "../assets/projectsData.json";
 import "./styles.css";
+import "./Projects.css";
 import ProjectSquare from "../components/projects/ProjectSquare";
 import FilterDropdown from "../components/projects/FilterDropdown";
 
@@ -71,7 +72,7 @@ function Projects() {
   };
 
   return (
-    <div className="page">
+    <div className="page projects-page">
       <h1>Projects</h1>
       <div className="filter-container">
         <FilterDropdown
