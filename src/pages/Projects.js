@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import projectsData from "../assets/projectsData.json";
 import "./styles.css";
+import "../components/projects/Projects.css";
 import ProjectSquare from "../components/projects/ProjectSquare";
 import FilterDropdown from "../components/projects/FilterDropdown";
 
@@ -70,6 +71,15 @@ function Projects() {
     setSelectedProjectTypes(types);
   };
 
+  const filterSignature = [
+    ...selectedTags,
+    ...selectedExperienceLevels,
+    ...selectedProjectTypes,
+  ]
+    .slice()
+    .sort()
+    .join(",");
+
   return (
     <div className="page">
       <h1>Projects</h1>
@@ -95,11 +105,26 @@ function Projects() {
           placeholder={"Project Type"}
         />
       </div>
-      <div className="projects-container">
-        {filteredProjects.map((project) => (
-          <ProjectSquare key={project.id} project={project} />
-        ))}
-      </div>
+      <p
+        className="results-count"
+        key={`results-count-${filterSignature}-${filteredProjects.length}`}
+      >
+        {filteredProjects.length} of {projectsData.length} projects
+      </p>
+      {filteredProjects.length === 0 ? (
+        <div
+          className="no-results-message"
+          key={`no-results-message-${filterSignature}`}
+        >
+          <p>No projects match the selected filters.</p>
+        </div>
+      ) : (
+        <div className="projects-container">
+          {filteredProjects.map((project) => (
+            <ProjectSquare key={project.id} project={project} />
+          ))}
+        </div>
+      )}
       <div className="ending">
         <p>
           The code for this website can be found{" "}

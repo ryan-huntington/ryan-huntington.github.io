@@ -1,3 +1,25 @@
+:root {
+  --projects-motion-duration: 250ms;
+  --projects-motion-easing: ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --projects-motion-duration: 0s;
+  }
+}
+
+@keyframes projects-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Style for the filter dropdown container */
 .filter-dropdown {
   margin-bottom: 20px;
@@ -12,10 +34,20 @@
 
 .filter__control {
   min-width: 300px;
+  transition: border-color var(--projects-motion-duration) var(--projects-motion-easing),
+    box-shadow var(--projects-motion-duration) var(--projects-motion-easing);
 }
 
 .filter__control:hover {
   cursor: pointer;
+}
+
+.filter__multi-value {
+  transition: background-color var(--projects-motion-duration) var(--projects-motion-easing);
+}
+
+.filter__multi-value__remove {
+  transition: background-color var(--projects-motion-duration) var(--projects-motion-easing);
 }
 
 .project-square {
@@ -34,6 +66,13 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  transition: transform var(--projects-motion-duration) var(--projects-motion-easing),
+    box-shadow var(--projects-motion-duration) var(--projects-motion-easing);
+}
+
+.project-square:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .content {
@@ -57,4 +96,14 @@
 
 .project-square a:hover {
   text-decoration: underline;
+}
+
+.results-count {
+  margin: 10px 0;
+  animation: projects-fade-in var(--projects-motion-duration) var(--projects-motion-easing);
+}
+
+.no-results-message {
+  margin: 20px 0;
+  animation: projects-fade-in var(--projects-motion-duration) var(--projects-motion-easing);
 }
