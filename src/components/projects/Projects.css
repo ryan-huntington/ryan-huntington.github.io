@@ -1,3 +1,12 @@
+.projects-page {
+  --projects-color-blue: #432fbf;
+  --projects-color-blue-light: #7263cf;
+  --projects-color-link: #007bff;
+  --projects-color-surface: #f9f9f9;
+  --projects-color-border: #ddd;
+  --projects-color-shadow: rgba(0, 0, 0, 0.1);
+}
+
 /* Style for the filter dropdown container */
 .filter-dropdown {
   margin-bottom: 20px;
@@ -23,10 +32,10 @@
   margin: 10px;
   padding: 20px;
 
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: var(--projects-color-surface);
+  border: 1px solid var(--projects-color-border);
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px var(--projects-color-shadow);
   min-width: 200px;
   height: 300px;
   max-width: 300px;
@@ -52,7 +61,7 @@
 .project-square a {
   display: inline-block;
   text-decoration: none;
-  color: #007bff;
+  color: var(--projects-color-link);
 }
 
 .project-square a:hover {

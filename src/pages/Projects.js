@@ -71,7 +71,7 @@ function Projects() {
   };
 
   return (
-    <div className="page">
+    <div className="page projects-page">
       <h1>Projects</h1>
       <div className="filter-container">
         <FilterDropdown
