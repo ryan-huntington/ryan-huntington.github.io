@@ -1,6 +1,6 @@
 /* Style for the filter dropdown container */
 .filter-dropdown {
-  margin-bottom: 20px;
+  margin-bottom: 0;
   /* min-width: 200px; */
 }
 
@@ -12,10 +12,83 @@
 
 .filter__control {
   min-width: 300px;
+  background-color: #f9f9f9;
+  border: 1px solid #7263cf;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.filter__control--is-focused {
+  border-color: #432fbf;
+  box-shadow: 0 0 0 1px #432fbf;
 }
 
 .filter__control:hover {
   cursor: pointer;
+  border-color: #432fbf;
+}
+
+.filter__placeholder {
+  color: #7263cf;
+}
+
+.filter__menu {
+  background-color: #fff;
+  border: 1px solid #e6d4ff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(67, 47, 191, 0.15);
+  overflow: hidden;
+}
+
+.filter__option {
+  color: #444;
+  cursor: pointer;
+}
+
+.filter__option--is-focused {
+  background-color: #e6d4ff;
+  color: #432fbf;
+}
+
+.filter__option--is-selected {
+  background-color: #432fbf;
+  color: #f9f9f9;
+}
+
+.filter__multi-value {
+  background-color: #e6d4ff;
+  border-radius: 5px;
+}
+
+.filter__multi-value__label {
+  color: #432fbf;
+}
+
+.filter__multi-value__remove {
+  color: #7263cf;
+  cursor: pointer;
+}
+
+.filter__multi-value__remove:hover {
+  background-color: #7263cf;
+  color: #f9f9f9;
+}
+
+.results-count {
+  text-align: center;
+  color: #666;
+  margin: 10px 0 20px;
+  font-size: 15px;
+}
+
+.no-results-message {
+  text-align: center;
+  color: #432fbf;
+  background-color: #f5edff;
+  border: 1px solid #e6d4ff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  margin: 20px 0;
 }
 
 .project-square {
