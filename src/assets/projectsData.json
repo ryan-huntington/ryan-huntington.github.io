@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Power Rankings",
-    "description": "Application to set up \"fights\" between beloved fictional characters. Creates brackets in a tournament style.",
+    "description": "Power Rankings is an application that lets users set up fights between beloved fictional characters and organizes the results into tournament-style brackets.",
     "tags": ["Java", "Swing", "HTML"],
     "experienceLevel": "1-3 years",
     "projectType": "Software Engineering",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "name": "RoadTripper",
-    "description": "A web application for allowing users to plot a road trip with curated stops along the route.",
+    "description": "RoadTripper is a web application that lets users plan a road trip by plotting curated stops along their chosen route.",
     "tags": [
       "React",
       "Java",
@@ -29,7 +29,7 @@
   {
     "id": 3,
     "name": "Personal Finance Assistant",
-    "description": "An introductory deep learning project dedicated to learning a person's spending habits and creating a savings goal/budget plan.",
+    "description": "Personal Finance Assistant is an introductory deep learning project that learns a person's spending habits and generates a savings goal and budget plan.",
     "tags": ["Python", "Jupyter Notebook"],
     "experienceLevel": "4-6 years",
     "projectType": "Machine Learning",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "MegEx",
-    "description": "A client-server pair modeling the functionality of HTTP/2.0. The client requests files and the server sends them, sometimes in parts, requiring the client to manage message order.",
+    "description": "MegEx is a client-server pair modeling HTTP/2.0 functionality, where the client requests files and the server sends them, sometimes in parts requiring order management.",
     "tags": ["Java"],
     "experienceLevel": "4-6 years",
     "projectType": "Networking",
@@ -47,7 +47,7 @@
   {
     "id": 5,
     "name": "JackUDP",
-    "description": "A client-server application utilizing UDP standards for communication. Allows for fast and lightweight data transmission between client and server.",
+    "description": "JackUDP is a client-server application that uses UDP standards for communication, allowing fast and lightweight data transmission between the client and server.",
     "tags": ["Java"],
     "experienceLevel": "4-6 years",
     "projectType": "Networking",
@@ -57,7 +57,7 @@
     "id": 8,
     "subpage": true,
     "name": "ALSRS",
-    "description": "Advanced Leopard Seal Recognition System (ALSRS) is able to detect leopard seals and identify them from an image. ",
+    "description": "ALSRS is a set of machine learning models and API endpoints that detect leopard seals in images and identify individual specimens using bounding boxes and markings.",
     "tags": ["Python", "Java", "Jupyter Notebook", "React", "Springboot"],
     "experienceLevel": "4-6 years",
     "projectType": "Machine Learning",
@@ -140,7 +140,7 @@
   {
     "id": 9,
     "name": "Entity Based Game Prototype",
-    "description": "Custom Entity Manager focused on handling game objects, collision detection, movement, and basic configuration-driven gameplay",
+    "description": "Entity Based Game Prototype is a custom entity manager that handles game objects, collision detection, movement, and basic configuration-driven gameplay.",
     "tags": ["C++", "SFML"],
     "experienceLevel": "4-6 years",
     "projectType": "Game Development",
@@ -150,7 +150,7 @@
     "id": 10,
     "subpage": true,
     "name": "Pirate Adventure",
-    "description": "Sail through three island-filled levels as a pirate ship, blasting enemy lighthouses, collecting coins, and surviving incoming cannon fire to reach the next challenge",
+    "description": "Pirate Adventure is a C++ Unreal Engine game where players sail a pirate ship through three island levels, destroy lighthouses, collect coins, and dodge cannon fire.",
     "tags": ["C++", "Unreal"],
     "experienceLevel": "1-3 years",
     "projectType": "Game Development",
